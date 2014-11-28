@@ -1,0 +1,18 @@
+{
+    "chars": [
+        {
+            "name": "anchor",
+            "value": "e000",
+            "fontFamily": "icons"
+        }
+    ],
+    "fonts": {
+        "svg": "fonts/icons.svg",
+        "woff": "fonts/icons.woff",
+        "eot": "fonts/icons.eot",
+        "ttf": "fonts/icons.ttf"
+    },
+    "fontFamily": "icons",
+    "options": {},
+    "escapedFontFamily": "\"icons\""
+}
