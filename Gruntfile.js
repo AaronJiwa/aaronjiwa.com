@@ -8,6 +8,7 @@ module.exports = function( grunt ) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
+
   if ( mode == 'prod' ) {
 
     grunt.log.subhead( 'Running Grunt in `Production` mode' );
@@ -59,7 +60,12 @@ module.exports = function( grunt ) {
         },
         dist: {
             src: [
+                'bower_components/gsap/src/minified/TimelineMax.min.js',
+                'bower_components/gsap/src/minified/TweenMax.min.js',
                 'bower_components/jquery/dist/jquery.min.js',
+                'bower_components/jquery.transit/jquery.transit.js',
+                'bower_components/gsap/src/minified/jquery.gasp.min.js',
+                'bower_components/ScrollMagic/js/jquery.scrollmagic.js',
                 'assets/js/src/plugins.js',
                 'assets/js/src/core/Global.js',
                 'assets/js/src/classes/*.js',

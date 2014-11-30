@@ -1,6 +1,22 @@
-$(function() {
+var controller = new ScrollMagic();
 
-var Layout = Object.create(LayoutObj);
+var LayoutCover = Object.create(LayoutCoverObj);
+LayoutCover.init();
+LayoutCover.animateIn();
 
-Layout.checkAndAppend('^anchors');
+var LayoutMe = Object.create(LayoutMeObj);
+
+LayoutMe.init();
+LayoutMe.animateInLeft();
+
+var Magic = Object.create(MagicObj);
+Magic.init();
+
+var scene = new ScrollScene({
+    triggerElement: "#trigger1",
+    duration: 200,
+    tweenChanges: true
+    })
+    .setTween(Magic.tween)
+    .addTo(controller);
 });

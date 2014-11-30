@@ -1528,6 +1528,11 @@ table-hover tbody tr.info:hover td {
   color: red;
 }
 
+/* line 17, ../sass/type/_type.scss */
+.layout__content--cover h1 {
+  text-align: center;
+}
+
 /* line 1, ../sass/partials/_shared.scss */
 .wrap {
   max-width: 1104px;
@@ -1537,7 +1542,7 @@ table-hover tbody tr.info:hover td {
   padding: 0 0.75rem;
   position: relative;
 }
-/* line 12, ../../../../../.rvm/gems/ruby-2.1.3/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../../../../.rvm/gems/ruby-2.1.3/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .wrap:after {
   content: " ";
   display: block;
@@ -1553,5 +1558,17 @@ table-hover tbody tr.info:hover td {
 
 /* line 1, ../sass/layouts/_layout.scss */
 .layout {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: translate3d(0, 0, 0);
+}
+
+/* line 8, ../sass/layouts/_layout.scss */
+.layout--me {
+  background-color: red;
+}
+
+/* line 12, ../sass/layouts/_layout.scss */
+.layout--cover {
   position: relative;
 }

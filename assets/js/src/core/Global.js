@@ -1,5 +1,5 @@
 "use strict"
-
+$(function() {
 // shorthand for define prop, we usually have writable, enumerable and configurable as they are.
 var defineProp = function( obj, key, value, writable, enumerable, configurable ) {
     writable = typeof writable !== 'undefined' ? writable : true;

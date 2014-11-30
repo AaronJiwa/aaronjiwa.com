@@ -27,6 +27,8 @@
     "flexdd-framework": "~1.0.1",
     "compass-mixins": "~1.0.2",
     "jquery": "~2.1.1",
-    "modernizr": "~2.8.3"
+    "modernizr": "~2.8.3",
+    "jquery.transit": "~0.9.12",
+    "ScrollMagic" : "~1.3.0"
   }
 }
