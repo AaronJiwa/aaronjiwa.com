@@ -5,9 +5,8 @@ LayoutCover.init();
 LayoutCover.animateIn();
 
 var LayoutMe = Object.create(LayoutMeObj);
-
 LayoutMe.init();
-LayoutMe.animateInLeft();
+LayoutMe.animateInScale();
 
 var Magic = Object.create(MagicObj);
 Magic.init();

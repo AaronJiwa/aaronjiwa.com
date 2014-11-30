@@ -3281,15 +3281,15 @@ var LayoutCoverObj = {
     parent: ".layout--cover",
     className:   ".layout__content--cover",
     animateDistance: $(document).height(),
-    delay: 300,
+    delay: 1000,
     duration: 800
 };
 
 defineProp( LayoutCoverObj, "init", function(){
 
     $(this.className).height($(document).height());
-    var headingHeight = ($(this.className).height()/2)-($(this.className+'>h1').height()/2);
-    $(this.className+'>h1').css('padding-top',headingHeight);
+    var headingHeight = ($(this.className).height()/2)-($(this.className+'>.loading>svg').height()/2);
+    $(this.className+'>.loading>svg').css('padding-top',headingHeight);
 
     $('html, body').css({
         'overflow': 'hidden',
@@ -3297,28 +3297,39 @@ defineProp( LayoutCoverObj, "init", function(){
     })
 });
 
-defineProp( LayoutCoverObj, "animateIn", function(){
-
+defineProp( LayoutCoverObj, "animateSlideUp", function(){
     $(this.parent).transition({
-        opacity:0,
         marginTop:-this.animateDistance+'px',
-        delay:this.delay,
+        delay:this.delay+800,
         duration:this.duration,
-    },'linear',function() {
-
+    },
+    'linear',
+    function() {
         $('html, body').css({
             'overflow': 'auto',
             'height': 'auto'
         })
     }
     );
+});
+
+defineProp( LayoutCoverObj, "animateIn", function(){
+
+    $(this.className).transition({
+        scale:0,
+        delay:this.delay,
+        duration:this.duration,
+    },
+    'linear',
+    this.animateSlideUp()
+    );
 
 });
 var LayoutMeObj = {
-    parent: "layout--me",
+    parent: ".layout--me",
     className:   ".layout__content--me",
     animateDistance: 100,
-    delay: 300,
+    delay: 2000,
     duration: 800
 };
 
@@ -3328,22 +3339,36 @@ defineProp( LayoutMeObj, "init", function(){
 
 });
 
-defineProp( LayoutMeObj, "animateInLeft", function(){
+defineProp( LayoutMeObj, "animateHeading", function(){
 
-    var position = $(this.className).offset().left;
 
-    $(this.className).css('opacity', '0');
-
-    $(this.className).offset({
-        left: position-this.animateDistance
-    })
-
-    $(this.className).transition({
+    $(this.className+'>h1').transition({
+        scale:1,
         opacity:1,
-        x:this.animateDistance+'px',
         delay:this.delay,
         duration:this.duration
-    });
+    },
+    'linear'
+    );
+
+});
+
+defineProp( LayoutMeObj, "animateInScale", function(){
+
+
+    var headingHeight = ($(this.parent).height()/2)-($(this.className+'>h1').height()/2);
+    $(this.className+'>h1').css('padding-top',headingHeight);
+    $(this.className+'>h1').css('scale','2');
+    $(this.className+'>h1').css('opacity',0);
+
+    $(this.parent).transition({
+        scale:1,
+        delay:this.delay,
+        duration:this.duration
+    },
+    'linear',
+    this.animateHeading()
+    );
 
 });
 var MagicObj = {
@@ -3383,9 +3408,8 @@ LayoutCover.init();
 LayoutCover.animateIn();
 
 var LayoutMe = Object.create(LayoutMeObj);
-
 LayoutMe.init();
-LayoutMe.animateInLeft();
+LayoutMe.animateInScale();
 
 var Magic = Object.create(MagicObj);
 Magic.init();

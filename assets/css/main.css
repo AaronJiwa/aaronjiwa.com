@@ -1529,7 +1529,16 @@ table-hover tbody tr.info:hover td {
 }
 
 /* line 17, ../sass/type/_type.scss */
-.layout__content--cover h1 {
+.layout__content--cover .loading {
+  text-align: center;
+}
+/* line 18, ../sass/type/_type.scss */
+.layout__content--cover .loading .svg-load-icon {
+  height: 120px;
+}
+
+/* line 26, ../sass/type/_type.scss */
+.layout__title--me {
   text-align: center;
 }
 
@@ -1568,7 +1577,12 @@ table-hover tbody tr.info:hover td {
   background-color: red;
 }
 
-/* line 12, ../sass/layouts/_layout.scss */
+/* line 13, ../sass/layouts/_layout.scss */
 .layout--cover {
-  position: relative;
+  background-color: blue;
+}
+
+/* line 43, ../sass/main.scss */
+html {
+  overflow-y: scroll;
 }

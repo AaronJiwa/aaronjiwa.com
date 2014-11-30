@@ -1,8 +1,8 @@
 var LayoutMeObj = {
-    parent: "layout--me",
+    parent: ".layout--me",
     className:   ".layout__content--me",
     animateDistance: 100,
-    delay: 300,
+    delay: 2000,
     duration: 800
 };
 
@@ -12,21 +12,35 @@ defineProp( LayoutMeObj, "init", function(){
 
 });
 
-defineProp( LayoutMeObj, "animateInLeft", function(){
+defineProp( LayoutMeObj, "animateHeading", function(){
 
-    var position = $(this.className).offset().left;
 
-    $(this.className).css('opacity', '0');
-
-    $(this.className).offset({
-        left: position-this.animateDistance
-    })
-
-    $(this.className).transition({
+    $(this.className+'>h1').transition({
+        scale:1,
         opacity:1,
-        x:this.animateDistance+'px',
         delay:this.delay,
         duration:this.duration
-    });
+    },
+    'linear'
+    );
+
+});
+
+defineProp( LayoutMeObj, "animateInScale", function(){
+
+
+    var headingHeight = ($(this.parent).height()/2)-($(this.className+'>h1').height()/2);
+    $(this.className+'>h1').css('padding-top',headingHeight);
+    $(this.className+'>h1').css('scale','2');
+    $(this.className+'>h1').css('opacity',0);
+
+    $(this.parent).transition({
+        scale:1,
+        delay:this.delay,
+        duration:this.duration
+    },
+    'linear',
+    this.animateHeading()
+    );
 
 });

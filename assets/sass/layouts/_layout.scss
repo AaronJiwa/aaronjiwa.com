@@ -2,13 +2,14 @@
     @extend %cf;
     position: relative;
     -webkit-backface-visibility: hidden;
-    -webkit-transition: translate3d(0,0,0);
+        -webkit-transition: translate3d(0,0,0);
 }
 
 .layout--me {
-    background-color: red;
+    background-color:red;
+
 }
 
 .layout--cover {
-    position:relative;
+    background-color:blue;
 }

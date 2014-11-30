@@ -14,7 +14,16 @@
 }
 
 .layout__content--cover {
-    h1{
+    .loading{
+        .svg-load-icon {
+            height:120px;
+        }
         text-align: center;
+
     }
+}
+
+.layout__title--me {
+    text-align: center;
+
 }
