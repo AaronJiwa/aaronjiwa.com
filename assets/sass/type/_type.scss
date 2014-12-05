@@ -5,25 +5,67 @@
  * Custom type styles and sizes belong in here.
  */
 
+
+
+
+p {
+  @include adjust-font-size-to($base-font-size);
+  text-align: center;
+}
+
+.i-hi {
+  @include icon( $hi );
+  @include adjust-font-size-to(72px);
+
+}
+
 .i-anchor {
+  visibility: hidden;
   @include icon( $anchor );
-  font-size: 72px;
+  @include adjust-font-size-to(144px);
+  line-height: 2;
   &:hover{
     color:red;
   }
+  margin-top: $flexdd-base-spacing-unit;
 }
 
-.layout__content--cover {
-    .loading{
-        .svg-load-icon {
-            height:120px;
-        }
-        text-align: center;
 
-    }
+.layout__content--cover {
+text-align: center;
+}
+
+.layout__content--me {
+    text-align: center;
 }
 
 .layout__title--me {
-    text-align: center;
+    @include adjust-font-size-to(144px);
+    line-height: 0.8em;
+    visibility: hidden;
+}
 
+.layout__title-support--me {
+    @include adjust-font-size-to(32px);
+    visibility: hidden;
+}
+//
+.extra {
+    @include adjust-font-size-to(14px);
+    visibility: hidden;
+}
+
+li a{
+    color:$blue-dark;
+    margin-right: $flexdd-base-spacing-unit;
+    margin-left: $flexdd-base-spacing-unit;
+    @include adjust-font-size-to($nav-font-size);
+
+    &:first-child{
+      margin-left: $flexdd-double-spacing-unit;
+    }
+
+    &:last-child{
+      margin-right: $flexdd-double-spacing-unit;
+    }
 }

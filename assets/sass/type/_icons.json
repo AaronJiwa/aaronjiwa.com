@@ -1,8 +1,13 @@
 {
     "chars": [
         {
-            "name": "anchor",
+            "name": "hi",
             "value": "e000",
+            "fontFamily": "icons"
+        },
+        {
+            "name": "anchor",
+            "value": "e001",
             "fontFamily": "icons"
         }
     ],

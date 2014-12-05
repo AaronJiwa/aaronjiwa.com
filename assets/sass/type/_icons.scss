@@ -1,6 +1,9 @@
+$hi-font-family: "icons";
+$hi-value: "\e000";
+$hi: "icons" "\e000";
 $anchor-font-family: "icons";
-$anchor-value: "\e000";
-$anchor: "icons" "\e000";
+$anchor-value: "\e001";
+$anchor: "icons" "\e001";
 
 @mixin icon-font-family($char) {
   font-family: nth($char, 1);

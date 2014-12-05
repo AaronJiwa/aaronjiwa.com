@@ -1,0 +1,26 @@
+.me-box {
+    visibility: hidden;
+    @include span(12 of 12);
+    background-color:#306E96;
+    padding:$flexdd-base-spacing-unit;
+}
+
+.me-box__left {
+    @include span(2 first);
+    text-align: center;
+
+}
+
+.me-box__middle {
+    @include span(8);
+    p{
+        text-align: left;
+    }
+}
+
+.me-box__right {
+    @include span(2 last);
+    p {
+        text-align: center;
+    }
+}

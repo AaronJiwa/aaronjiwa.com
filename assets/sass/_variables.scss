@@ -33,7 +33,7 @@
 //*-------------------------------------*
 
   //Base type
-  $base-font-size: 16px   !default;
+  $base-font-size: 18px   !default;
   $base-line-height: 24px !default;
   $base-face: sans-serif  !default;
 
@@ -59,7 +59,7 @@
 \*------------------------------------*/
 
 $total-columns: 12;                  // a 12-column grid
-$column-width: 70px;                 // each column is 4em wide
+$column-width: 50px;                 // each column is 4em wide
 $gutter-width: $flexdd-base-spacing-unit;   // 1em gutters between columns
 $grid-padding: $flexdd-double-spacing-unit; // wider grid padding to give the brand some space
 

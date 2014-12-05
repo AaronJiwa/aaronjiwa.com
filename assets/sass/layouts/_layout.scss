@@ -6,10 +6,35 @@
 }
 
 .layout--me {
-    background-color:red;
+    background-color:$blue-dark;
+    color:$green;
+    height: 100%;
+    margin-bottom:-70px;
+    z-index: -1;
 
+    @include mq( $to: macro-medium ) {
+        display:none;
+    }
 }
 
-.layout--cover {
-    background-color:blue;
+.layout--with-padding {
+    padding-top: $flexdd-double-spacing-unit;
+    padding-bottom: $flexdd-double-spacing-unit;
 }
+
+.layout--green {
+    background-color:$green;
+    color:$blue-dark;
+}
+
+.layout--blue {
+    background-color:$blue-dark;
+    color:$green;
+}
+
+.layout--about{
+    @include mq( $from: macro-small ) {
+        margin-top: 70px;
+    }
+}
+

@@ -1507,8 +1507,15 @@ table-hover tbody tr.info:hover td {
  * Used to setup the type configuration
  * Custom type styles and sizes belong in here.
  */
-/* line 8, ../sass/type/_type.scss */
-.i-anchor {
+/* line 11, ../sass/type/_type.scss */
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* line 16, ../sass/type/_type.scss */
+.i-hi {
   font-family: "icons";
   speak: none;
   font-style: normal;
@@ -1517,34 +1524,91 @@ table-hover tbody tr.info:hover td {
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  font-size: 72px;
+  font-size: 4.5em;
+  line-height: 1.33333em;
 }
-/* line 27, ../sass/type/_icons.scss */
-.i-anchor:before {
+/* line 30, ../sass/type/_icons.scss */
+.i-hi:before {
   content: "";
 }
-/* line 11, ../sass/type/_type.scss */
+
+/* line 22, ../sass/type/_type.scss */
+.i-anchor {
+  visibility: hidden;
+  font-family: "icons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 9em;
+  line-height: 1.16667em;
+  line-height: 2;
+  margin-top: 24px;
+}
+/* line 30, ../sass/type/_icons.scss */
+.i-anchor:before {
+  content: "";
+}
+/* line 27, ../sass/type/_type.scss */
 .i-anchor:hover {
   color: red;
 }
 
-/* line 17, ../sass/type/_type.scss */
-.layout__content--cover .loading {
+/* line 34, ../sass/type/_type.scss */
+.layout__content--cover {
   text-align: center;
-}
-/* line 18, ../sass/type/_type.scss */
-.layout__content--cover .loading .svg-load-icon {
-  height: 120px;
 }
 
-/* line 26, ../sass/type/_type.scss */
-.layout__title--me {
+/* line 38, ../sass/type/_type.scss */
+.layout__content--me {
   text-align: center;
+}
+
+/* line 42, ../sass/type/_type.scss */
+.layout__title--me {
+  font-size: 9em;
+  line-height: 1.16667em;
+  line-height: 0.8em;
+  visibility: hidden;
+}
+
+/* line 48, ../sass/type/_type.scss */
+.layout__title-support--me {
+  font-size: 2em;
+  line-height: 1.5em;
+  visibility: hidden;
+}
+
+/* line 53, ../sass/type/_type.scss */
+.extra {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  visibility: hidden;
+}
+
+/* line 58, ../sass/type/_type.scss */
+li a {
+  color: #214760;
+  margin-right: 24px;
+  margin-left: 24px;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+/* line 64, ../sass/type/_type.scss */
+li a:first-child {
+  margin-left: 48px;
+}
+/* line 68, ../sass/type/_type.scss */
+li a:last-child {
+  margin-right: 48px;
 }
 
 /* line 1, ../sass/partials/_shared.scss */
 .wrap {
-  max-width: 1104px;
+  max-width: 864px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 12px;
@@ -1565,6 +1629,60 @@ table-hover tbody tr.info:hover td {
   }
 }
 
+/* line 15, ../sass/partials/_shared.scss */
+.wrap--me {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 1, ../sass/partials/_siteHeader.scss */
+.site-header {
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: -70px;
+  background-color: #9EDF48;
+  height: 70px;
+  text-align: center;
+}
+/* line 3, ../sass/partials/_siteHeader.scss */
+.site-header li {
+  display: inline-block;
+  clear: both;
+}
+@media all and (max-width: 47.99em) {
+  /* line 1, ../sass/partials/_siteHeader.scss */
+  .site-header {
+    display: none;
+  }
+}
+
+/* line 18, ../sass/partials/_siteHeader.scss */
+.nav-links {
+  padding-top: 12px;
+}
+
+/* line 23, ../sass/partials/_siteHeader.scss */
+.site-header--sticky {
+  height: 70px;
+  background-color: #9EDF48;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+/* line 32, ../sass/partials/_siteHeader.scss */
+.site-header--sticky li a {
+  color: #214760;
+}
+
 /* line 1, ../sass/layouts/_layout.scss */
 .layout {
   position: relative;
@@ -1574,15 +1692,122 @@ table-hover tbody tr.info:hover td {
 
 /* line 8, ../sass/layouts/_layout.scss */
 .layout--me {
-  background-color: red;
+  background-color: #214760;
+  color: #9EDF48;
+  height: 100%;
+  margin-bottom: -70px;
+  z-index: -1;
+}
+@media all and (max-width: 47.99em) {
+  /* line 8, ../sass/layouts/_layout.scss */
+  .layout--me {
+    display: none;
+  }
 }
 
-/* line 13, ../sass/layouts/_layout.scss */
-.layout--cover {
-  background-color: blue;
+/* line 20, ../sass/layouts/_layout.scss */
+.layout--with-padding {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
-/* line 43, ../sass/main.scss */
-html {
-  overflow-y: scroll;
+/* line 25, ../sass/layouts/_layout.scss */
+.layout--green {
+  background-color: #9EDF48;
+  color: #214760;
+}
+
+/* line 30, ../sass/layouts/_layout.scss */
+.layout--blue {
+  background-color: #214760;
+  color: #9EDF48;
+}
+
+@media all and (min-width: 30em) {
+  /* line 35, ../sass/layouts/_layout.scss */
+  .layout--about {
+    margin-top: 70px;
+  }
+}
+
+/* line 1, ../sass/objects/_Project.scss */
+.project {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 24px;
+}
+
+/* line 6, ../sass/objects/_Project.scss */
+.project__left {
+  width: 48.61111%;
+  float: left;
+  margin-right: 2.77778%;
+}
+/* line 8, ../sass/objects/_Project.scss */
+.project__left p {
+  text-align: left;
+}
+
+/* line 14, ../sass/objects/_Project.scss */
+.project__right {
+  width: 48.61111%;
+  float: right;
+  margin-right: 0;
+}
+/* line 16, ../sass/objects/_Project.scss */
+.project__right p {
+  text-align: left;
+}
+
+/* line 1, ../sass/objects/_meBox.scss */
+.me-box {
+  visibility: hidden;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #306E96;
+  padding: 24px;
+}
+
+/* line 8, ../sass/objects/_meBox.scss */
+.me-box__left {
+  width: 14.35185%;
+  float: left;
+  margin-right: 2.77778%;
+  text-align: center;
+}
+
+/* line 14, ../sass/objects/_meBox.scss */
+.me-box__middle {
+  width: 65.74074%;
+  float: left;
+  margin-right: 2.77778%;
+}
+/* line 16, ../sass/objects/_meBox.scss */
+.me-box__middle p {
+  text-align: left;
+}
+
+/* line 21, ../sass/objects/_meBox.scss */
+.me-box__right {
+  width: 14.35185%;
+  float: right;
+  margin-right: 0;
+}
+/* line 23, ../sass/objects/_meBox.scss */
+.me-box__right p {
+  text-align: center;
+}
+
+/* line 1, ../sass/objects/_svg.scss */
+.loading-svg {
+  margin: auto;
+}
+
+/* line 57, ../sass/main.scss */
+html, body {
+  height: 100%;
 }

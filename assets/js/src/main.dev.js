@@ -1,21 +1,25 @@
-var controller = new ScrollMagic();
+var Me = Object.create(MeObj);
+var meTimeline = Me.makeAnim();
 
-var LayoutCover = Object.create(LayoutCoverObj);
-LayoutCover.init();
-LayoutCover.animateIn();
+var About = Object.create(AboutObj);
+var aboutTimeline = About.makeAnim();
 
-var LayoutMe = Object.create(LayoutMeObj);
-LayoutMe.init();
-LayoutMe.animateInScale();
 
-var Magic = Object.create(MagicObj);
-Magic.init();
+controller = new ScrollMagic();
 
-var scene = new ScrollScene({
-    triggerElement: "#trigger1",
-    duration: 200,
-    tweenChanges: true
-    })
-    .setTween(Magic.tween)
-    .addTo(controller);
+// build scene
+var sceneMe = new ScrollScene({triggerElement: ".layout--me"})
+                .setTween(meTimeline)
+
+
+var sceneAbout = new ScrollScene({triggerElement: ".layout--about"})
+                .setTween(aboutTimeline)
+
+
+
+controller.addScene([
+    sceneMe,
+    sceneAbout
+]);
+
 });

@@ -3276,99 +3276,63 @@ var defineProp = function( obj, key, value, writable, enumerable, configurable )
     Object.defineProperty( obj, key, config );
 }
 
+var win = $(window),
+    nav = $('.site-header'),
+pos = nav.offset().top,
+sticky = function(){
+  win.scrollTop() > pos ? nav.addClass('site-header--sticky')
+  : nav.removeClass('site-header--sticky')
+}
+win.scroll(sticky);
 
-var LayoutCoverObj = {
-    parent: ".layout--cover",
-    className:   ".layout__content--cover",
-    animateDistance: $(document).height(),
-    delay: 1000,
-    duration: 800
+$('a[href*=#]:not([href=#])').click(function() {
+if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  var target = $(this.hash);
+  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  if (target.length) {
+    $('html,body').animate({
+      scrollTop: target.offset().top-70
+    }, 1000);
+    return false;
+  }
+}
+});
+var AboutObj = {
+    box: '.me-box',
+    extra: '.extra',
+    header: '.site-header',
+    arrow: '.down-arrow',
+    timeLineMax: new TimelineMax(),
+    delay: 0.5,
+    duration: 1,
+    distance: 400
 };
 
-defineProp( LayoutCoverObj, "init", function(){
+defineProp( AboutObj, "beforeAnim", function(){
 
-    $(this.className).height($(document).height());
-    var headingHeight = ($(this.className).height()/2)-($(this.className+'>.loading>svg').height()/2);
-    $(this.className+'>.loading>svg').css('padding-top',headingHeight);
-
-    $('html, body').css({
-        'overflow': 'hidden',
-        'height': '100%'
-    })
-});
-
-defineProp( LayoutCoverObj, "animateSlideUp", function(){
-    $(this.parent).transition({
-        marginTop:-this.animateDistance+'px',
-        delay:this.delay+800,
-        duration:this.duration,
-    },
-    'linear',
-    function() {
-        $('html, body').css({
-            'overflow': 'auto',
-            'height': 'auto'
-        })
-    }
-    );
-});
-
-defineProp( LayoutCoverObj, "animateIn", function(){
-
-    $(this.className).transition({
-        scale:0,
-        delay:this.delay,
-        duration:this.duration,
-    },
-    'linear',
-    this.animateSlideUp()
-    );
-
-});
-var LayoutMeObj = {
-    parent: ".layout--me",
-    className:   ".layout__content--me",
-    animateDistance: 100,
-    delay: 2000,
-    duration: 800
-};
-
-defineProp( LayoutMeObj, "init", function(){
-
-    $(this.className).height($(document).height());
+    $(this.box).offset({
+        left:$(this.box).offset().left-this.distance
+    });
 
 });
 
-defineProp( LayoutMeObj, "animateHeading", function(){
+defineProp( AboutObj, "makeAnim", function(){
+
+        this.beforeAnim();
+
+        this.timeLineMax.to(
+            [$(this.box)],
+            this.duration,
+            {
+                x:this.distance,
+                ease:Strong.easeOut,
+                autoAlpha:1
+            }
+        );
 
 
-    $(this.className+'>h1').transition({
-        scale:1,
-        opacity:1,
-        delay:this.delay,
-        duration:this.duration
-    },
-    'linear'
-    );
 
-});
-
-defineProp( LayoutMeObj, "animateInScale", function(){
-
-
-    var headingHeight = ($(this.parent).height()/2)-($(this.className+'>h1').height()/2);
-    $(this.className+'>h1').css('padding-top',headingHeight);
-    $(this.className+'>h1').css('scale','2');
-    $(this.className+'>h1').css('opacity',0);
-
-    $(this.parent).transition({
-        scale:1,
-        delay:this.delay,
-        duration:this.duration
-    },
-    'linear',
-    this.animateHeading()
-    );
+    return this.timeLineMax;
 
 });
 var MagicObj = {
@@ -3401,24 +3365,94 @@ defineProp( MagicObj, "init", function(){
     $('.layout--text').css('background-color','blue');
 
 });
-var controller = new ScrollMagic();
+var MeObj = {
+    title: '.layout__title--me',
+    support: '.layout__title-support--me',
+    extra: '.extra',
+    header: '.site-header',
+    arrow: '.down-arrow',
+    timeLineMax: new TimelineMax(),
+    delay: 0.5,
+    duration: 1,
+    distance: 400
+};
 
-var LayoutCover = Object.create(LayoutCoverObj);
-LayoutCover.init();
-LayoutCover.animateIn();
+defineProp( MeObj, "beforeAnim", function(){
 
-var LayoutMe = Object.create(LayoutMeObj);
-LayoutMe.init();
-LayoutMe.animateInScale();
+$(this.title).offset({top:$(this.title).offset().top-this.distance});
 
-var Magic = Object.create(MagicObj);
-Magic.init();
+});
 
-var scene = new ScrollScene({
-    triggerElement: "#trigger1",
-    duration: 200,
-    tweenChanges: true
-    })
-    .setTween(Magic.tween)
-    .addTo(controller);
+defineProp( MeObj, "makeAnim", function(){
+
+        this.beforeAnim();
+
+
+        this.timeLineMax.to(
+            [$(this.title)],
+            this.duration,
+            {
+                y:this.distance,
+                ease:Bounce.easeOut,
+                autoAlpha:1
+            }
+        );
+
+        this.timeLineMax.to(
+            [$(this.support)],
+            this.duration,
+            {
+                delay:this.delay,
+                ease:Strong.easeOut,
+                autoAlpha:1
+            }
+        );
+
+        this.timeLineMax.to(
+            [$(this.extra)  ],
+            this.duration,
+            {
+                ease:Strong.easeOut,
+                autoAlpha:1
+            }
+        );
+
+        this.timeLineMax.to(
+            [$(this.header)],
+            this.duration*2,
+            {
+                ease:Strong.easeOut,
+                autoAlpha:1
+            }
+        );
+
+
+
+    return this.timeLineMax;
+
+});
+var Me = Object.create(MeObj);
+var meTimeline = Me.makeAnim();
+
+var About = Object.create(AboutObj);
+var aboutTimeline = About.makeAnim();
+
+
+controller = new ScrollMagic();
+
+// build scene
+var sceneMe = new ScrollScene({triggerElement: ".layout--me"})
+                .setTween(meTimeline)
+
+
+var sceneAbout = new ScrollScene({triggerElement: ".layout--about"})
+                .setTween(aboutTimeline)
+
+
+
+controller.addScene([
+    sceneMe,
+    sceneAbout
+]);
+
 });

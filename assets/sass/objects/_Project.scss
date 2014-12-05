@@ -1,0 +1,19 @@
+.project {
+    @include span(12 of 12);
+    padding:$flexdd-base-spacing-unit;
+}
+
+.project__left {
+    @include span(6 first);
+    p{
+    text-align: left;
+    }
+}
+
+
+.project__right {
+    @include span(6 last);
+    p {
+        text-align: left;
+    }
+}
