@@ -1642,7 +1642,27 @@ a {
   text-align: center;
 }
 
-/* line 108, ../sass/type/_type.scss */
+/* line 109, ../sass/type/_type.scss */
+.about-text-left {
+  visibility: hidden;
+}
+
+/* line 113, ../sass/type/_type.scss */
+.about-text-left {
+  visibility: hidden;
+}
+
+/* line 117, ../sass/type/_type.scss */
+.cv-text {
+  visibility: hidden;
+}
+
+/* line 121, ../sass/type/_type.scss */
+.cv-image {
+  visibility: hidden;
+}
+
+/* line 125, ../sass/type/_type.scss */
 li a {
   font-family: light;
   font-weight: 300;
@@ -1652,11 +1672,11 @@ li a {
   font-size: 1.25em;
   line-height: 1.2em;
 }
-/* line 116, ../sass/type/_type.scss */
+/* line 133, ../sass/type/_type.scss */
 li a:first-child {
   margin-left: 48px;
 }
-/* line 120, ../sass/type/_type.scss */
+/* line 137, ../sass/type/_type.scss */
 li a:last-child {
   margin-right: 48px;
 }

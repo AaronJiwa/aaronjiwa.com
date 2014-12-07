@@ -105,6 +105,23 @@ text-align: center;
     @include adjust-font-size-to(14px);
     text-align: center;
 }
+
+.about-text-left{
+  visibility: hidden;
+}
+
+.about-text-left{
+  visibility: hidden;
+}
+
+.cv-text {
+  visibility: hidden;
+}
+
+.cv-image {
+  visibility: hidden;
+}
+
 li a{
     @include opensans(light,300);
     color:$blue-dark;

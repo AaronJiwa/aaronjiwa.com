@@ -1,8 +1,7 @@
 var AboutObj = {
-    box: '.me-box',
-    extra: '.extra',
-    header: '.site-header',
-    arrow: '.down-arrow',
+    text: '.about-text-left',
+    cvImage: '.cv-image',
+    cvText: '.cv-text',
     timeLineMax: new TimelineMax(),
     delay: 0.5,
     duration: 1,
@@ -11,9 +10,11 @@ var AboutObj = {
 
 defineProp( AboutObj, "beforeAnim", function(){
 
-    $(this.box).offset({
-        left:$(this.box).offset().left-this.distance
+    $(this.text).offset({
+        left:$(this.text).offset().left-this.distance
     });
+
+
 
 });
 
@@ -22,7 +23,7 @@ defineProp( AboutObj, "makeAnim", function(){
         this.beforeAnim();
 
         this.timeLineMax.to(
-            [$(this.box)],
+            [$(this.text)],
             this.duration,
             {
                 x:this.distance,
@@ -30,6 +31,25 @@ defineProp( AboutObj, "makeAnim", function(){
                 autoAlpha:1
             }
         );
+
+        this.timeLineMax.to(
+            [$(this.cvImage)],
+            this.duration/2,
+            {
+                ease:Strong.easeOut,
+                autoAlpha:1
+            }
+        );
+
+        this.timeLineMax.to(
+            [$(this.cvText)],
+            this.duration/2,
+            {
+                ease:Strong.easeOut,
+                autoAlpha:1
+            }
+        );
+
 
 
 
