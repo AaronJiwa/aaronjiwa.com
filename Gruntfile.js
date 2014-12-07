@@ -62,6 +62,7 @@ module.exports = function( grunt ) {
             src: [
                 'bower_components/gsap/src/minified/TimelineMax.min.js',
                 'bower_components/gsap/src/minified/TweenMax.min.js',
+                'bower_components/gsap/src/minified/plugins/CSSPlugin.min.js',
                 'bower_components/jquery/dist/jquery.min.js',
                 'bower_components/gsap/src/minified/jquery.gasp.min.js',
                 'bower_components/ScrollMagic/js/jquery.scrollmagic.js',

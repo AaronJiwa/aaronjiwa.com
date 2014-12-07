@@ -55,6 +55,7 @@ defineProp( PhoneObj, "phoneAnim", function(){
             }
         );
 
+
         this.phoneTimeLineMax.to(
             [$(this.phoneImage)],
             this.duration,

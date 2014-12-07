@@ -3,6 +3,7 @@
     position: relative;
     -webkit-backface-visibility: hidden;
     -webkit-transition: translate3d(0,0,0);
+    height: 100%;
 }
 
 
@@ -17,6 +18,10 @@
     @include mq( $to: macro-medium ) {
         display:none;
     }
+}
+
+#projects{
+      overflow: hidden;
 }
 
 .layout--with-padding {

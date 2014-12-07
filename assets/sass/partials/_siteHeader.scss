@@ -5,14 +5,17 @@
     clear: both;
 
     a {
-        color:$white;
+        color:$blue-dark;
     }
     }
+
+    border-bottom: 1px solid darken(rgba($white,0.95),20%);
+
 
     width:100%;
     z-index:1;
     margin-bottom: -46px;
-    background-color:darken($blue-dark,10%);
+    background-color:rgba($white,1);
     height:46px;
     text-align: center;
 
@@ -29,7 +32,7 @@
 
 .site-header--sticky {
     height: 46px;
-    background-color:rgba($white,0.95);
+    background-color:rgba($white,0.90);
 
     position: fixed;
     top: 0; left: 0;

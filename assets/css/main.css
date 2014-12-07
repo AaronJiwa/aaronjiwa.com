@@ -1,1 +1,2162 @@
-﻿/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:border-box;box-sizing:border-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}h1,h2,h3,h4,h5,h6,p,blockquote,pre,dl,dd,ol,ul,form,fieldset,legend,table,th,td,caption,hr{margin:0;padding:0}li>ul,li>ol{margin-bottom:0}nav ul,nav ol{padding-left:0}abbr[title],dfn[title]{cursor:help}a,u,ins{text-decoration:none}ins{border-bottom:1px solid}img{display:block;font-style:italic;max-width:100%;height:auto}.not-flexible-media img{max-width:none}figure>img{display:block}label,input,textarea,button,select,option{cursor:pointer}.text-input:active,.text-input:focus,textarea:active,textarea:focus{cursor:text;outline:none}.box{display:block}.box__media--left{float:left;margin-right:24px}.box__media--right{float:right;margin-left:24px}.box__media img{display:block;max-width:none}.box__body{overflow:hidden;position:relative}.box__body>:last-child{margin-bottom:0}.btn{font:inherit;cursor:pointer;border:none;display:inline-block;margin:0;line-height:1}.btn,.btn:hover{text-decoration:none}.box,.nav,.layout{zoom:1}.box:before,.nav:before,.layout:before,.box:after,.nav:after,.layout:after{content:"";display:table}.box:after,.nav:after,.layout:after{clear:both}.flag{display:table;width:100%}.flag__image,.flag__body{display:table-cell;vertical-align:middle}.flag--top .flag__image,.flag--top .flag__body{vertical-align:top}.flag--bottom .flag__image,.flag--bottom .flag__body{vertical-align:bottom}.flag__image{padding-right:12px}.flag__image>img{display:block}.flag--rev .flag__image{padding-right:0;padding-left:12px}.flag__body{width:100%}.important{color:red !important}.form input[type="text"],.form input[type="password"],.form input[type="email"],.form input[type="url"],.form input[type="date"],.form input[type="month"],.form input[type="time"],.form input[type="datetime"],.form input[type="datetime-local"],.form input[type="week"],.form input[type="number"],.form input[type="search"],.form input[type="tel"],.form input[type="color"],.form select,.form textarea{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;display:inline-block;padding:0.5em 0.6em;border:1px solid #ccc;box-shadow:inset 0 1px 3px #ddd;border-radius:4px}.form input:not([type]){-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;display:inline-block;padding:0.5em 0.6em;border:1px solid #ccc;box-shadow:inset 0 1px 3px #ddd;border-radius:4px}.form input[type="color"]{padding:0.2em 0.5em}.form input[type="text"]:focus,.form input[type="password"]:focus,.form input[type="email"]:focus,.form input[type="url"]:focus,.form input[type="date"]:focus,.form input[type="month"]:focus,.form input[type="time"]:focus,.form input[type="datetime"]:focus,.form input[type="datetime-local"]:focus,.form input[type="week"]:focus,.form input[type="number"]:focus,.form input[type="search"]:focus,.form input[type="tel"]:focus,.form input[type="color"]:focus,.form select:focus,.form textarea:focus{outline:0;outline:thin dotted \9;border-color:#129FEA}.form input:not([type]):focus{outline:0;outline:thin dotted \9;border-color:#129FEA}.form input[type="file"]:focus,.form input[type="radio"]:focus,.form input[type="checkbox"]:focus{outline:thin dotted #333;outline:1px auto #129FEA}.form .checkbox,.form .radio{margin:0.5em 0;display:block}.form input[type="text"][disabled],.form input[type="password"][disabled],.form input[type="email"][disabled],.form input[type="url"][disabled],.form input[type="date"][disabled],.form input[type="month"][disabled],.form input[type="time"][disabled],.form input[type="datetime"][disabled],.form input[type="datetime-local"][disabled],.form input[type="week"][disabled],.form input[type="number"][disabled],.form input[type="search"][disabled],.form input[type="tel"][disabled],.form input[type="color"][disabled],.form select[disabled],.form textarea[disabled]{cursor:not-allowed;background-color:#eaeded;color:#cad2d3}.form input:not([type])[disabled]{cursor:not-allowed;background-color:#eaeded;color:#cad2d3}.form input[readonly],.form select[readonly],.form textarea[readonly]{background:#eee;color:#777;border-color:#ccc}.form input:focus:invalid,.form textarea:focus:invalid,.form select:focus:invalid{color:#b94a48;border-color:#ee5f5b}.form input:focus:invalid:focus,.form textarea:focus:invalid:focus,.form select:focus:invalid:focus{border-color:#e9322d}.form input[type="file"]:focus:invalid:focus,.form input[type="radio"]:focus:invalid:focus,.form input[type="checkbox"]:focus:invalid:focus{outline-color:#e9322d}.form select{border:1px solid #ccc;background-color:white}.form select[multiple]{height:auto}.form label{margin:0.5em 0 0.2em}.form fieldset{margin:0;padding:0.35em 0 0.75em;border:0}.form legend{display:block;width:100%;padding:0.3em 0;margin-bottom:0.3em;color:#333;border-bottom:1px solid #e5e5e5}.form-stacked input[type="text"],.form-stacked input[type="password"],.form-stacked input[type="email"],.form-stacked input[type="url"],.form-stacked input[type="date"],.form-stacked input[type="month"],.form-stacked input[type="time"],.form-stacked input[type="datetime"],.form-stacked input[type="datetime-local"],.form-stacked input[type="week"],.form-stacked input[type="number"],.form-stacked input[type="search"],.form-stacked input[type="tel"],.form-stacked input[type="color"],.form-stacked select,.form-stacked label,.form-stacked textarea{display:block;margin:0.25em 0}.form-stacked input:not([type]){display:block;margin:0.25em 0}.form-aligned input,.form-aligned textarea,.form-aligned select,.form-message-inline{display:inline-block;*display:inline;*zoom:1;vertical-align:middle}.form-aligned textarea{vertical-align:top}.form-aligned .control-group{margin-bottom:12px}.form-aligned .control-group label{display:inline-block;text-align:right;vertical-align:middle;width:10em;margin:0 1em 0 0}.form-aligned .controls{margin:1.5em 0 0 10em}.form .group fieldset{margin-bottom:10px}.form .group input{display:block;padding:10px;margin:0;border-radius:0;position:relative;top:-1px}.form .group input:focus{z-index:2}.form .group input:first-child{top:1px;border-radius:4px 4px 0 0}.form .group input:last-child{top:-2px;border-radius:0 0 4px 4px}.form .group button{margin:0.35em 0}.form .input-1{width:100%}.form .input-2-3{width:66%}.form .input-1-2{width:50%}.form .input-1-3{width:33%}.form .input-1-4{width:25%}.form-message-inline{display:inline-block;padding-left:0.3em;color:#666;vertical-align:middle;font-size:0.875em}.form-message{display:block;color:#666;font-size:0.875em}.i{position:relative;zoom:1;display:inline-block;*display:block;font-style:normal;font-weight:bold;text-align:center;line-height:1;vertical-align:middle}.i{vertical-align:top}.nav{margin:0;padding:0;list-style:none}.nav>li,.nav>li>a{display:inline-block;*display:inline;zoom:1}.nav--fit{display:table;width:100%}.nav--fit>li{display:table-cell}.nav--fit>li>a{display:block}table{width:100%;margin-bottom:24px;border-collapse:collapse;border-spacing:0;background-color:transparent}th,td{padding:8px;line-height:20px;text-align:left;vertical-align:top;border-top:1px solid #ddd}table th{font-weight:bold}table thead th{vertical-align:bottom}table caption+thead tr:first-child th,table caption+thead tr:first-child td,table colgroup+thead tr:first-child th,table colgroup+thead tr:first-child td,table thead:first-child tr:first-child th,table thead:first-child tr:first-child td{border-top:0}table tbody+tbody{border-top:2px solid #ddd}.table-condensed th,.table-condensed td{padding:4px 5px}.table-bordered{border:1px solid #ddd;border-collapse:separate;*border-collapse:collapse;border-left:0;border-radius:4px}.table-bordered th,.table-bordered td{border-left:1px solid #ddd}.table-bordered caption+thead tr:first-child th,.table-bordered caption+tbody tr:first-child th,.table-bordered caption+tbody tr:first-child td,.table-bordered colgroup+thead tr:first-child th,.table-bordered colgroup+tbody tr:first-child th,.table-bordered colgroup+tbody tr:first-child td,.table-bordered thead:first-child tr:first-child th,.table-bordered tbody:first-child tr:first-child th,.table-bordered tbody:first-child tr:first-child td{border-top:0}.table-bordered thead:first-child tr:first-child th:first-child,.table-bordered tbody:first-child tr:first-child td:first-child{border-radius:4px 0 0 0}.table-bordered thead:first-child tr:first-child th:last-child,.table-bordered tbody:first-child tr:first-child td:last-child{border-radius:0 4px 0 0}.table-bordered thead:last-child tr:last-child th:first-child,.table-bordered tbody:last-child tr:last-child td:first-child,.table-bordered tfoot:last-child tr:last-child td:first-child{border-radius:0 0 0 4px}.table-bordered thead:last-child tr:last-child th:last-child,.table-bordered tbody:last-child tr:last-child td:last-child,.table-bordered tfoot:last-child tr:last-child td:last-child{border-radius:0 0 4px 0}.table-bordered caption+thead tr:first-child th:first-child,.table-bordered caption+tbody tr:first-child td:first-child,.table-bordered colgroup+thead tr:first-child th:first-child,.table-bordered colgroup+tbody tr:first-child td:first-child{border-radius:4px 0 0 0}.table-bordered caption+thead tr:first-child th:last-child,.table-bordered caption+tbody tr:first-child td:last-child,.table-bordered colgroup+thead tr:first-child th:last-child,.table-bordered colgroup+tbody tr:first-child td:last-child{border-radius:0 4px 0 0}.table-striped tbody tr:nth-child(odd) td,.table-striped tbody tr:nth-child(odd) th{background-color:#f9f9f9}.table-hover tbody tr:hover td,.table-hover tbody tr:hover th{background-color:#f5f5f5}[colspan]{text-align:center}[colspan="1"]{text-align:left}[rowspan]{vertical-align:middle}[rowspan="1"]{vertical-align:top}table tbody tr.success td{background-color:#dff0d8}table tbody tr.error td{background-color:#e8dede}table tbody tr.warning td{background-color:#fcf8e3}table tbody tr.info td{background-color:#d9edf7}table-hover tbody tr.success:hover td{background-color:#d0e9c6}table-hover tbody tr.error:hover td{background-color:#ebcccc}table-hover tbody tr.warning:hover td{background-color:#faf2cc}table-hover tbody tr.info:hover td{background-color:#c4e3f3}@font-face{font-family:light;src:url("fonts/OpenSans-Light.ttf")}@font-face{font-family:reg;src:url("fonts/OpenSans-Regular.ttf")}@font-face{font-family:"icons";src:url("fonts/icons.eot");src:url("fonts/icons.eot?#iefix") format("embedded-opentype"),url("fonts/icons.woff") format("woff"),url("fonts/icons.ttf") format("truetype"),url("fonts/icons.svg#icomoon") format("svg");font-weight:normal;font-style:normal}p{font-family:light;font-weight:300;font-size:1.75em;line-height:1.71429em;text-align:left}h1{font-family:"Arial"}h2{font-family:light;font-weight:300;font-size:4.5em;line-height:1.33333em}.i-hi{font-family:"icons";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;font-size:4.5em;line-height:1.33333em}.i-hi:before{content:""}.i-anchor{visibility:hidden;font-family:"icons";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;font-size:9em;line-height:1.16667em;line-height:2;margin-top:24px}.i-anchor:before{content:""}.i-anchor:hover{color:red}.me-box__left p{font-size:1.375em;line-height:2.18182em;line-height:1.6em}a{color:#e4e9ea}.layout__content--cover{text-align:center}.layout__content--me{text-align:center}.layout__title--me{font-size:9em;line-height:1.16667em;line-height:0.8em;visibility:hidden}.layout__title--center{text-align:center}.layout__title-support--me{font-size:2em;line-height:1.5em;visibility:hidden}.extra{font-size:0.875em;line-height:1.71429em;visibility:hidden;text-align:center}.green-text{color:#11F250}.small{font-size:0.875em;line-height:1.71429em;text-align:center}.about-text-left{visibility:hidden}.about-text-left{visibility:hidden}.cv-text{visibility:hidden}.cv-image{visibility:hidden}li a{font-family:light;font-weight:300;color:#214760;margin-right:24px;margin-left:24px;font-size:1.25em;line-height:1.2em}li a:first-child{margin-left:48px}li a:last-child{margin-right:48px}.wrap{max-width:924px;margin-left:auto;margin-right:auto;padding:0 12px;padding:0 0.75rem;position:relative}.wrap:after{content:" ";display:block;clear:both}@media all and (min-width: 48em){.wrap{padding:0 32px;padding:0 2rem}}.wrap--me{position:absolute;width:50%;height:40%;margin:auto;top:0;left:0;right:0;bottom:0}.site-header{visibility:hidden;width:100%;z-index:1;margin-bottom:-46px;background-color:#142b3a;height:46px;text-align:center;-webkit-transition:background-color 1s}.site-header li{display:inline-block;clear:both}.site-header li a{color:#e4e9ea}@media all and (max-width: 47.99em){.site-header{display:none}}.nav-links{padding-top:12px}.site-header--sticky{height:46px;background-color:rgba(228,233,234,0.95);position:fixed;top:0;left:0;z-index:2;border-bottom:1px solid rgba(171,186,189,0.95)}.site-header--sticky li a{color:#214760}.layout{position:relative;-webkit-backface-visibility:hidden;-webkit-transition:translate3d(0, 0, 0)}.layout--me{background-color:#214760;color:#e4e9ea;height:100%;margin-bottom:-46px;z-index:-1}@media all and (max-width: 47.99em){.layout--me{display:none}}.layout--with-padding{padding-top:96px;padding-bottom:96px}.layout--with-padding-top{padding-top:96px}.layout--green{background-color:#11F250;color:#214760}.layout--blue{background-color:#214760;color:#e4e9ea}.layout--white{background-color:#e4e9ea;color:#214760}@media all and (min-width: 30em){.layout--white{height:90%}}.layout--white-dark{background-color:#f5f5f5;color:#214760}@media all and (min-width: 30em){.layout--about{margin-top:46px}}.layout--contact{height:100%}.project{width:100%;float:right;margin-right:0}@media all and (min-width: 30em){.project__left{width:48.7013%;float:left;margin-right:2.5974%}}@media all and (max-width: 47.99em){.project__left{padding-left:12px;padding-right:12px}}.project__left p{text-align:left}.project__left--padding{padding-top:24px;padding-bottom:24px}@media all and (min-width: 30em){.project__right{width:48.7013%;float:right;margin-right:0}}@media all and (max-width: 47.99em){.project__right{padding-left:12px;padding-right:12px}}.project__right p{text-align:left}.project__right--padding{padding-top:24px;padding-bottom:24px}.bar{position:relative}.bar__behind{position:relative;background-color:#333333;width:100%;border-radius:5px}.bar__front{position:absolute;border-radius:5px;top:0;left:0;right:100%;bottom:0;background-color:#11F250;background-size:cover}@media all and (max-width: 47.99em){.bar__front{right:49%}}.me-box{width:100%;float:right;margin-right:0}@media all and (min-width: 30em){.me-box__left{width:65.80087%;float:left;margin-right:2.5974%}}@media all and (max-width: 47.99em){.me-box__left{padding-left:12px;padding-right:12px}}.me-box__left p{text-align:left}.me-box__left--padding{padding-top:24px;padding-bottom:24px}@media all and (min-width: 30em){.me-box__right{width:14.50216%;float:right;margin-right:0}}@media all and (max-width: 47.99em){.me-box__right{padding-left:12px;padding-right:12px}}.me-box__right p{text-align:center}.me-box__right--padding{padding-top:24px;padding-bottom:24px}.phone-box{position:relative}.phone{position:relative;visibility:hidden;width:100%}.phone-text{text-align:center;visibility:hidden}.phone-text p{text-align:center}.phone-box__content{visibility:hidden;position:absolute;border-radius:5px;top:14.2%;left:7.2%;right:5.8%;bottom:13.5%;-webkit-transition:background-image 0.5s ease-in-out;-moz-transition:background-image 0.5s ease-in-out;-ms-transition:background-image 0.5s ease-in-out;-o-transition:background-image 0.5s ease-in-out;transition:background-image 0.5s ease-in-out}@media all and (max-width: 47.99em){.phone-box__content{right:49%}}.loading-svg{margin:auto}html,body{height:100%}
+@charset "UTF-8";
+/**
+ *
+ * FILE: main.scss
+ *
+ * DATE: 2014
+ * VERSION 1.0
+ *
+ */
+/**
+ * Variables File
+ *
+ * Place all site related variables here
+ * Some default variables have been set
+ */
+/*------------------------------------*\
+  $SUSY CONFIG
+\*------------------------------------*/
+/**
+ * Vendor File
+ *
+ * Used to include any third party frameworks/tools
+ * This file was originally generated from the Yeoman generator.
+ */
+/**
+ *
+ * FILE: Flexdd.scss
+ *
+ * AUTHOR: Adam Bulmer (http://www.mintuz.com)
+ * DATE: 2014
+ * VERSION 1.0
+ *
+ */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 32, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 52, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 75, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 115, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 159, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 171, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+hr {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 227, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 250, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 275, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 288, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 300, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 309, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `border-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 332, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 344, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /* 2 */
+  box-sizing: border-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 368, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 422, ../../bower_components/flexdd-base-reset/reset/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/**
+ * The usual...
+ */
+/* line 8, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Remove vertical spacing from nested lists.
+ */
+/* line 22, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+/**
+ * Remove padding from nav ul's
+ */
+/* line 31, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+nav ul,
+nav ol {
+  padding-left: 0;
+}
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+/* line 39, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+abbr[title], dfn[title] {
+  cursor: help;
+}
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+/* line 46, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+a, u, ins {
+  text-decoration: none;
+}
+
+/**
+ * Apply faux underline via `border-bottom`.
+ */
+/* line 53, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+ins {
+  border-bottom: 1px solid;
+}
+
+/**
+ * Add italic for alt text and flexible media if set
+ */
+/* line 60, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+img {
+  display: block;
+  font-style: italic;
+  max-width: 100%;
+  height: auto;
+}
+/* line 68, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+.not-flexible-media img {
+  max-width: none;
+}
+
+/**
+ * Images in `figure` elements.
+ */
+/* line 77, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+figure > img {
+  display: block;
+}
+
+/**
+ * Give form elements some cursor interactions...
+ */
+/* line 85, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+/* line 94, ../../bower_components/flexdd-base-reset/reset/_reset.scss */
+.text-input:active,
+.text-input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none;
+}
+
+/*------------------------------------*\
+    $CALCULTE PERCENTAGE
+\*------------------------------------*/
+/**
+ * Calculate the percentage equivilant of any pixel based value using
+ * Ethan Marcotte's formula from Repsonsive Web Design:
+ * 
+   target / context = result
+ * 
+ * Added in an additional if $old-ie condition to round the percentage
+ * to the nearest whole number as IE7 can't handle sub-pixels
+ * 
+ */
+/**
+ * A shortned helper function of the calculate the percentage function
+ * 
+ */
+/*------------------------------------*\
+    $PEM
+\*------------------------------------*/
+/**
+ * Convert pixels to ems
+ * 
+   pixels / base-font = em
+ * 
+ */
+/*------------------------------------*\
+    $REM
+\*------------------------------------*/
+/*
+ * 'rem' is a Sass function that converts pixel values to rem values for whatever property is passed to it.
+ * 
+ */
+/*------------------------------------*\
+    $REM
+\*------------------------------------*/
+/*
+ * Remove any unit from a supplied number
+ * 
+ */
+/*------------------------------------*\
+    $BORDER BOX
+\*------------------------------------*/
+/**
+ * Sets the box sizing for the applied element
+ * to border-box making the padding inclusive
+ * within the overall width
+ * 
+   `@include box-sizing;`
+ * 
+ */
+/*------------------------------------*\
+    $HOVER
+\*------------------------------------*/
+/**
+ * Apply hover and focus states for the current element
+ *
+ * Optional pass an $additional_sector to be included e.g.:
+ *
+ * e.g. @include hover( '.is-active' );
+ * 
+ */
+/*------------------------------------*\
+    $OLD IE
+\*------------------------------------*/
+/**
+ * A generic mixin for IE.
+ */
+/*------------------------------------*\
+    $PLACEHOLDER
+\*------------------------------------*/
+/**
+ * Apply placeholder text styles
+ * 
+ */
+/*------------------------------------*\
+    $REM
+\*------------------------------------*/
+/*
+ * 'rem' is a Sass mixin that converts pixel values to rem values for whatever property is passed to it.
+ * It returns two lines of code — one of the regular pixel values (for IE), and another with the
+ * converted rem values (for everyone else).
+ *
+ * This mixin expects $properties to be a Sass map
+ * 
+ * Sample input:
+ * .element {
+ *   @include rem((
+ *		 padding, 10px 0 2px 5px
+ *   ));
+ * }
+ * 
+ * Sample output:
+ * .element {
+ *   padding: 10px 0 2px 5px;
+ *   padding: 1rem 0 0.2rem 0.5rem;
+ * }
+ * 
+ */
+/*------------------------------------*\
+    $MODERNIZR SUPPORT MIXINS
+\*------------------------------------*/
+/**
+ * Modernizr support mixins taken from 
+ * http://hugogiraudel.com/2014/05/12/modernizr-sass-mixin/
+ *
+ * makes it easier to maintain fallbacks for specific CSS features not supported
+ * in older browsers. 
+ */
+/**
+ * used when a feature is supported
+ */
+/**
+ * fallback for when a feature is not supported.
+ */
+/*------------------------------------*\
+    $BOX
+\*------------------------------------*/
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ * E.g.:
+ * 
+   <div class="box">
+       <aside class="box__media--left">
+	       <img src=http://placekitten.com/200/300 alt="Kittens" />
+	   </aside>
+	   <div class="box__body">
+	       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+	       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	   </div>
+   </div>
+ * 
+ * Demo: jsfiddle.net/inuitcss/cf4Qs
+ * 
+ */
+/* line 23, ../../bower_components/flexdd-base-objects/objects/_box.scss */
+.box {
+  display: block;
+}
+
+/* line 28, ../../bower_components/flexdd-base-objects/objects/_box.scss */
+.box__media--left {
+  float: left;
+  margin-right: 24px;
+}
+
+/* line 33, ../../bower_components/flexdd-base-objects/objects/_box.scss */
+.box__media--right {
+  float: right;
+  margin-left: 24px;
+}
+
+/* line 38, ../../bower_components/flexdd-base-objects/objects/_box.scss */
+.box__media img {
+  display: block;
+  max-width: none;
+}
+
+/* line 43, ../../bower_components/flexdd-base-objects/objects/_box.scss */
+.box__body {
+  overflow: hidden;
+  position: relative;
+}
+/* line 48, ../../bower_components/flexdd-base-objects/objects/_box.scss */
+.box__body > :last-child {
+  margin-bottom: 0;
+}
+
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/**
+ * Basic button structural styling. Extend in your theme stylesheet.
+ * 
+ * Demo: jsfiddle.net/inuitcss/RqHcp
+ * 
+ */
+/* line 11, ../../bower_components/flexdd-base-objects/objects/_btn.scss */
+.btn {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+
+/* line 20, ../../bower_components/flexdd-base-objects/objects/_btn.scss */
+.btn,
+.btn:hover {
+  text-decoration: none;
+}
+
+/*------------------------------------*\
+    $CLEARFIX
+\*------------------------------------*/
+/**
+ * Micro clearfix, as per: nicolasgallagher.com/micro-clearfix-hack
+ * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
+ * and over in your markup.
+ */
+/* line 10, ../../bower_components/flexdd-base-objects/objects/_clearfix.scss */
+.box, .nav, .layout {
+  zoom: 1;
+}
+/* line 14, ../../bower_components/flexdd-base-objects/objects/_clearfix.scss */
+.box:before, .nav:before, .layout:before, .box:after, .nav:after, .layout:after {
+  content: "";
+  display: table;
+}
+/* line 20, ../../bower_components/flexdd-base-objects/objects/_clearfix.scss */
+.box:after, .nav:after, .layout:after {
+  clear: both;
+}
+
+/*------------------------------------*\
+$FLAG
+\*------------------------------------*/
+/**
+* Similar to the media/box object but allows for the control on alignment:
+* http://csswizardry.com/2013/05/the-flag-object/
+*
+*/
+/* line 11, ../../bower_components/flexdd-base-objects/objects/_flag.scss */
+.flag {
+  display: table;
+  width: 100%;
+}
+
+/* line 16, ../../bower_components/flexdd-base-objects/objects/_flag.scss */
+.flag__image,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 22, ../../bower_components/flexdd-base-objects/objects/_flag.scss */
+.flag--top .flag__image, .flag--top
+.flag__body {
+  vertical-align: top;
+}
+/* line 26, ../../bower_components/flexdd-base-objects/objects/_flag.scss */
+.flag--bottom .flag__image, .flag--bottom
+.flag__body {
+  vertical-align: bottom;
+}
+
+/* line 32, ../../bower_components/flexdd-base-objects/objects/_flag.scss */
+.flag__image {
+  padding-right: 12px;
+}
+/* line 36, ../../bower_components/flexdd-base-objects/objects/_flag.scss */
+.flag__image > img {
+  display: block;
+}
+/* line 40, ../../bower_components/flexdd-base-objects/objects/_flag.scss */
+.flag--rev .flag__image {
+  padding-right: 0;
+  padding-left: 12px;
+}
+
+/* line 48, ../../bower_components/flexdd-base-objects/objects/_flag.scss */
+.flag__body {
+  width: 100%;
+}
+
+/*------------------------------------*\
+    $FORMS
+    \*------------------------------------*/
+/*
+    
+    These form styles are based on http://purecss.io/forms/
+    They are very simple and a single breakpoint is used.
+    Override colours within the site/objects/_forms.scss file
+
+    */
+/* line 13, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.important {
+  color: red !important;
+}
+
+/* line 17, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input[type="text"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="url"],
+.form input[type="date"],
+.form input[type="month"],
+.form input[type="time"],
+.form input[type="datetime"],
+.form input[type="datetime-local"],
+.form input[type="week"],
+.form input[type="number"],
+.form input[type="search"],
+.form input[type="tel"],
+.form input[type="color"],
+.form select,
+.form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.5em 0.6em;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* line 49, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input:not([type]) {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.5em 0.6em;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+}
+
+/* Chrome (as of v.32/34 on OS X) needs additional room for color to display. */
+/* May be able to remove this tweak as color inputs become more standardized across browsers. */
+/* line 65, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input[type="color"] {
+  padding: 0.2em 0.5em;
+}
+
+/* line 70, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus,
+.form input[type="url"]:focus,
+.form input[type="date"]:focus,
+.form input[type="month"]:focus,
+.form input[type="time"]:focus,
+.form input[type="datetime"]:focus,
+.form input[type="datetime-local"]:focus,
+.form input[type="week"]:focus,
+.form input[type="number"]:focus,
+.form input[type="search"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="color"]:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  border-color: #129FEA;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* line 95, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input:not([type]):focus {
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  border-color: #129FEA;
+}
+
+/* line 101, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input[type="file"]:focus,
+.form input[type="radio"]:focus,
+.form input[type="checkbox"]:focus {
+  outline: thin dotted #333;
+  outline: 1px auto #129FEA;
+}
+
+/* line 107, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .checkbox,
+.form .radio {
+  margin: 0.5em 0;
+  display: block;
+}
+
+/* line 113, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input[type="text"][disabled],
+.form input[type="password"][disabled],
+.form input[type="email"][disabled],
+.form input[type="url"][disabled],
+.form input[type="date"][disabled],
+.form input[type="month"][disabled],
+.form input[type="time"][disabled],
+.form input[type="datetime"][disabled],
+.form input[type="datetime-local"][disabled],
+.form input[type="week"][disabled],
+.form input[type="number"][disabled],
+.form input[type="search"][disabled],
+.form input[type="tel"][disabled],
+.form input[type="color"][disabled],
+.form select[disabled],
+.form textarea[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* line 138, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input:not([type])[disabled] {
+  cursor: not-allowed;
+  background-color: #eaeded;
+  color: #cad2d3;
+}
+
+/* line 143, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input[readonly],
+.form select[readonly],
+.form textarea[readonly] {
+  background: #eee;
+  /* menu hover bg color */
+  color: #777;
+  /* menu text color */
+  border-color: #ccc;
+}
+
+/* line 151, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input:focus:invalid,
+.form textarea:focus:invalid,
+.form select:focus:invalid {
+  color: #b94a48;
+  border-color: #ee5f5b;
+}
+
+/* line 157, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input:focus:invalid:focus,
+.form textarea:focus:invalid:focus,
+.form select:focus:invalid:focus {
+  border-color: #e9322d;
+}
+
+/* line 162, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form input[type="file"]:focus:invalid:focus,
+.form input[type="radio"]:focus:invalid:focus,
+.form input[type="checkbox"]:focus:invalid:focus {
+  outline-color: #e9322d;
+}
+
+/* line 167, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form select {
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+/* line 171, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form select[multiple] {
+  height: auto;
+}
+
+/* line 174, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form label {
+  margin: 0.5em 0 0.2em;
+}
+
+/* line 177, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form fieldset {
+  margin: 0;
+  padding: 0.35em 0 0.75em;
+  border: 0;
+}
+
+/* line 182, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 191, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-stacked input[type="text"],
+.form-stacked input[type="password"],
+.form-stacked input[type="email"],
+.form-stacked input[type="url"],
+.form-stacked input[type="date"],
+.form-stacked input[type="month"],
+.form-stacked input[type="time"],
+.form-stacked input[type="datetime"],
+.form-stacked input[type="datetime-local"],
+.form-stacked input[type="week"],
+.form-stacked input[type="number"],
+.form-stacked input[type="search"],
+.form-stacked input[type="tel"],
+.form-stacked input[type="color"],
+.form-stacked select,
+.form-stacked label,
+.form-stacked textarea {
+  display: block;
+  margin: 0.25em 0;
+}
+
+/*
+Need to separate out the :not() selector from the rest of the CSS 2.1 selectors
+since IE8 won't execute CSS that contains a CSS3 selector.
+*/
+/* line 216, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-stacked input:not([type]) {
+  display: block;
+  margin: 0.25em 0;
+}
+
+/* line 220, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-aligned input,
+.form-aligned textarea,
+.form-aligned select,
+.form-message-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+
+/* line 229, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-aligned textarea {
+  vertical-align: top;
+}
+
+/* Aligned Forms */
+/* line 234, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-aligned .control-group {
+  margin-bottom: 12px;
+}
+
+/* line 237, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-aligned .control-group label {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  width: 10em;
+  margin: 0 1em 0 0;
+}
+
+/* line 244, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-aligned .controls {
+  margin: 1.5em 0 0 10em;
+}
+
+/* Grouped Inputs */
+/* line 249, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .group fieldset {
+  margin-bottom: 10px;
+}
+
+/* line 252, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .group input {
+  display: block;
+  padding: 10px;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  top: -1px;
+}
+
+/* line 260, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .group input:focus {
+  z-index: 2;
+}
+
+/* line 263, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .group input:first-child {
+  top: 1px;
+  border-radius: 4px 4px 0 0;
+}
+
+/* line 267, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .group input:last-child {
+  top: -2px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* line 271, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .group button {
+  margin: 0.35em 0;
+}
+
+/* line 275, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .input-1 {
+  width: 100%;
+}
+
+/* line 279, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .input-2-3 {
+  width: 66%;
+}
+
+/* line 283, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .input-1-2 {
+  width: 50%;
+}
+
+/* line 287, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .input-1-3 {
+  width: 33%;
+}
+
+/* line 291, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form .input-1-4 {
+  width: 25%;
+}
+
+/* Inline help for forms */
+/* line 296, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-message-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em;
+}
+
+/* Block help for forms */
+/* line 305, ../../bower_components/flexdd-base-objects/objects/_forms.scss */
+.form-message {
+  display: block;
+  color: #666;
+  font-size: 0.875em;
+}
+
+/*------------------------------------*\
+    $ICON
+\*------------------------------------*/
+/* line 5, ../../bower_components/flexdd-base-objects/objects/_icon.scss */
+.i {
+  position: relative;
+  zoom: 1;
+  display: inline-block;
+  *display: block;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* line 19, ../../bower_components/flexdd-base-objects/objects/_icon.scss */
+.i {
+  vertical-align: top;
+}
+
+/*------------------------------------*\
+$NAV
+\*------------------------------------*/
+/**
+* Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
+* When used on an `ol` or `ul`, this class throws the list into horizontal mode
+* e.g.:
+* 
+<ul class="nav">
+<li><a href=#>Home</a></li>
+<li><a href=#>About</a></li>
+<li><a href=#>Portfolio</a></li>
+<li><a href=#>Contact</a></li>
+</ul>
+* 
+* Demo: jsfiddle.net/inuitcss/Vnph4
+* 
+*/
+/* line 20, ../../bower_components/flexdd-base-objects/objects/_nav.scss */
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 28, ../../bower_components/flexdd-base-objects/objects/_nav.scss */
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+/* line 39, ../../bower_components/flexdd-base-objects/objects/_nav.scss */
+.nav--fit {
+  display: table;
+  width: 100%;
+}
+/* line 44, ../../bower_components/flexdd-base-objects/objects/_nav.scss */
+.nav--fit > li {
+  display: table-cell;
+}
+/* line 48, ../../bower_components/flexdd-base-objects/objects/_nav.scss */
+.nav--fit > li > a {
+  display: block;
+}
+
+/*------------------------------------*\
+    $TABLES
+\*------------------------------------*/
+/* line 5, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table {
+  width: 100%;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent;
+}
+
+/* line 13, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+th,
+td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+/* line 22, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table th {
+  font-weight: bold;
+}
+
+/* line 26, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table thead th {
+  vertical-align: bottom;
+}
+
+/* line 30, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+/* line 39, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+/* line 43, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px;
+}
+
+/* line 48, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapse;
+  border-left: 0;
+  border-radius: 4px;
+}
+
+/* line 56, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #dddddd;
+}
+
+/* line 61, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+
+/* line 73, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child {
+  border-radius: 4px 0 0 0;
+}
+
+/* line 78, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+/* line 83, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child,
+.table-bordered tfoot:last-child tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+
+/* line 89, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child,
+.table-bordered tfoot:last-child tr:last-child td:last-child {
+  border-radius: 0 0 4px 0;
+}
+
+/* line 95, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered caption + thead tr:first-child th:first-child,
+.table-bordered caption + tbody tr:first-child td:first-child,
+.table-bordered colgroup + thead tr:first-child th:first-child,
+.table-bordered colgroup + tbody tr:first-child td:first-child {
+  border-radius: 4px 0 0 0;
+}
+
+/* line 102, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-bordered caption + thead tr:first-child th:last-child,
+.table-bordered caption + tbody tr:first-child td:last-child,
+.table-bordered colgroup + thead tr:first-child th:last-child,
+.table-bordered colgroup + tbody tr:first-child td:last-child {
+  border-radius: 0 4px 0 0;
+}
+
+/* line 109, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+/* line 114, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: whitesmoke;
+}
+
+/**
+ * Cell alignments
+ */
+/* line 123, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+[colspan] {
+  text-align: center;
+}
+
+/* line 127, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+[colspan="1"] {
+  text-align: left;
+}
+
+/* line 131, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+[rowspan] {
+  vertical-align: middle;
+}
+
+/* line 135, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+[rowspan="1"] {
+  vertical-align: top;
+}
+
+/**
+ * Table colours
+ */
+/* line 142, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table tbody tr.success td {
+  background-color: #dff0d8;
+}
+
+/* line 146, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table tbody tr.error td {
+  background-color: #e8dede;
+}
+
+/* line 150, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table tbody tr.warning td {
+  background-color: #fcf8e3;
+}
+
+/* line 154, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table tbody tr.info td {
+  background-color: #d9edf7;
+}
+
+/* line 158, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table-hover tbody tr.success:hover td {
+  background-color: #d0e9c6;
+}
+
+/* line 162, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table-hover tbody tr.error:hover td {
+  background-color: #ebcccc;
+}
+
+/* line 166, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table-hover tbody tr.warning:hover td {
+  background-color: #faf2cc;
+}
+
+/* line 170, ../../bower_components/flexdd-base-objects/objects/_tables.scss */
+table-hover tbody tr.info:hover td {
+  background-color: #c4e3f3;
+}
+
+/**
+ * Include a subset of Compass mixins.
+ * without the requirement of ruby, allows for libsass.
+ */
+/*
+ * A partial implementation of the Ruby list functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/lists.rb
+ */
+/*
+ * A partial implementation of the Ruby constants functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/lib/compass/sass_extensions/functions/constants.rb
+ */
+/*
+ * A partial implementation of the Ruby display functions from Compass:
+ * https://github.com/Compass/compass/blob/stable/core/lib/compass/core/sass_extensions/functions/display.rb
+ */
+/**
+ * Fonts File
+ *
+ * Used to define any font faces
+ * or font based mixins.
+ */
+@font-face {
+  font-family: light;
+  src: url("fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: reg;
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "icons";
+  src: url("fonts/icons.eot");
+  src: url("fonts/icons.eot?#iefix") format("embedded-opentype"), url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype"), url("fonts/icons.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/**
+ * Type File
+ *
+ * Used to setup the type configuration
+ * Custom type styles and sizes belong in here.
+ */
+/* line 26, ../sass/type/_type.scss */
+p {
+  font-family: light;
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  text-align: left;
+}
+
+/* line 32, ../sass/type/_type.scss */
+h1 {
+  font-family: "Arial";
+}
+
+/* line 36, ../sass/type/_type.scss */
+h2 {
+  font-family: light;
+  font-weight: 300;
+  font-size: 4.5em;
+  line-height: 1.33333em;
+}
+
+/* line 41, ../sass/type/_type.scss */
+.i-hi {
+  font-family: "icons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 4.5em;
+  line-height: 1.33333em;
+}
+/* line 30, ../sass/type/_icons.scss */
+.i-hi:before {
+  content: "";
+}
+
+/* line 47, ../sass/type/_type.scss */
+.i-anchor {
+  visibility: hidden;
+  font-family: "icons";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 9em;
+  line-height: 1.16667em;
+  line-height: 2;
+  margin-top: 24px;
+}
+/* line 30, ../sass/type/_icons.scss */
+.i-anchor:before {
+  content: "";
+}
+/* line 52, ../sass/type/_type.scss */
+.i-anchor:hover {
+  color: red;
+}
+
+/* line 59, ../sass/type/_type.scss */
+.me-box__left p {
+  font-size: 1.375em;
+  line-height: 2.18182em;
+  line-height: 1.6em;
+}
+
+/* line 66, ../sass/type/_type.scss */
+a {
+  color: #e4e9ea;
+}
+
+/* line 71, ../sass/type/_type.scss */
+.layout__content--cover {
+  text-align: center;
+}
+
+/* line 75, ../sass/type/_type.scss */
+.layout__content--me {
+  text-align: center;
+}
+
+/* line 79, ../sass/type/_type.scss */
+.layout__title--me {
+  font-size: 9em;
+  line-height: 1.16667em;
+  line-height: 0.8em;
+  visibility: hidden;
+}
+
+/* line 85, ../sass/type/_type.scss */
+.layout__title--contact {
+  font-size: 4.5em;
+  line-height: 1.33333em;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+/* line 91, ../sass/type/_type.scss */
+.contact__support {
+  font-size: 3em;
+  line-height: 1.5em;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+/* line 97, ../sass/type/_type.scss */
+.layout__title--center {
+  text-align: center;
+}
+
+/* line 101, ../sass/type/_type.scss */
+.layout__title-support--me {
+  font-size: 2em;
+  line-height: 1.5em;
+  visibility: hidden;
+}
+
+/* line 106, ../sass/type/_type.scss */
+.extra {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  visibility: hidden;
+  text-align: center;
+}
+
+/* line 112, ../sass/type/_type.scss */
+.green-text {
+  color: #11F250;
+}
+
+/* line 116, ../sass/type/_type.scss */
+.small {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  text-align: center;
+}
+
+/* line 121, ../sass/type/_type.scss */
+.about-text-left {
+  visibility: hidden;
+}
+
+/* line 125, ../sass/type/_type.scss */
+.about-text-left {
+  visibility: hidden;
+}
+
+/* line 129, ../sass/type/_type.scss */
+.cv-text {
+  visibility: hidden;
+}
+
+/* line 133, ../sass/type/_type.scss */
+.cv-image {
+  visibility: hidden;
+}
+
+/* line 137, ../sass/type/_type.scss */
+.about-me-heading {
+  visibility: hidden;
+}
+
+/* line 141, ../sass/type/_type.scss */
+li a {
+  font-family: light;
+  font-weight: 300;
+  color: #214760;
+  margin-right: 24px;
+  margin-left: 24px;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+/* line 149, ../sass/type/_type.scss */
+li a:first-child {
+  margin-left: 48px;
+}
+/* line 153, ../sass/type/_type.scss */
+li a:last-child {
+  margin-right: 48px;
+}
+
+/* line 1, ../sass/partials/_shared.scss */
+.wrap {
+  max-width: 924px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 12px;
+  padding: 0 0.75rem;
+  position: relative;
+}
+/* line 12, ../../../../../../.rvm/gems/ruby-2.1.3/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media all and (min-width: 48em) {
+  /* line 1, ../sass/partials/_shared.scss */
+  .wrap {
+    padding: 0 32px;
+    padding: 0 2rem;
+  }
+}
+
+/* line 15, ../sass/partials/_shared.scss */
+.wrap--me {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 27, ../sass/partials/_shared.scss */
+.wrap--contact {
+  max-width: 924px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 12px;
+  padding: 0 0.75rem;
+  position: relative;
+}
+/* line 12, ../../../../../../.rvm/gems/ruby-2.1.3/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
+.wrap--contact:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media all and (min-width: 48em) {
+  /* line 27, ../sass/partials/_shared.scss */
+  .wrap--contact {
+    padding: 0 32px;
+    padding: 0 2rem;
+  }
+}
+
+/* line 1, ../sass/partials/_siteHeader.scss */
+.site-header {
+  visibility: hidden;
+  border-bottom: 1px solid rgba(171, 186, 189, 0.95);
+  width: 100%;
+  z-index: 1;
+  margin-bottom: -46px;
+  background-color: #e4e9ea;
+  height: 46px;
+  text-align: center;
+  -webkit-transition: background-color 1s;
+}
+/* line 3, ../sass/partials/_siteHeader.scss */
+.site-header li {
+  display: inline-block;
+  clear: both;
+}
+/* line 7, ../sass/partials/_siteHeader.scss */
+.site-header li a {
+  color: #214760;
+}
+@media all and (max-width: 47.99em) {
+  /* line 1, ../sass/partials/_siteHeader.scss */
+  .site-header {
+    display: none;
+  }
+}
+
+/* line 28, ../sass/partials/_siteHeader.scss */
+.nav-links {
+  padding-top: 12px;
+}
+
+/* line 33, ../sass/partials/_siteHeader.scss */
+.site-header--sticky {
+  height: 46px;
+  background-color: rgba(228, 233, 234, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: 1px solid rgba(171, 186, 189, 0.95);
+}
+/* line 42, ../sass/partials/_siteHeader.scss */
+.site-header--sticky li a {
+  color: #214760;
+}
+
+/* line 1, ../sass/layouts/_layout.scss */
+.layout {
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: translate3d(0, 0, 0);
+  height: 100%;
+}
+
+/* line 10, ../sass/layouts/_layout.scss */
+.layout--me {
+  background-color: #214760;
+  color: #e4e9ea;
+  height: 100%;
+  margin-bottom: -46px;
+  z-index: -1;
+}
+@media all and (max-width: 47.99em) {
+  /* line 10, ../sass/layouts/_layout.scss */
+  .layout--me {
+    display: none;
+  }
+}
+
+/* line 23, ../sass/layouts/_layout.scss */
+#projects {
+  overflow: hidden;
+}
+
+/* line 27, ../sass/layouts/_layout.scss */
+.layout--with-padding {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+/* line 32, ../sass/layouts/_layout.scss */
+.layout--with-padding-top {
+  padding-top: 96px;
+}
+
+/* line 36, ../sass/layouts/_layout.scss */
+.layout--green {
+  background-color: #11F250;
+  color: #214760;
+}
+
+/* line 41, ../sass/layouts/_layout.scss */
+.layout--blue {
+  background-color: #214760;
+  color: #e4e9ea;
+}
+
+/* line 46, ../sass/layouts/_layout.scss */
+.layout--white {
+  background-color: #e4e9ea;
+  color: #214760;
+}
+@media all and (min-width: 30em) {
+  /* line 46, ../sass/layouts/_layout.scss */
+  .layout--white {
+    height: 90%;
+  }
+}
+
+/* line 55, ../sass/layouts/_layout.scss */
+.layout--white-dark {
+  background-color: #f5f5f5;
+  color: #214760;
+}
+
+@media all and (min-width: 30em) {
+  /* line 60, ../sass/layouts/_layout.scss */
+  .layout--about {
+    margin-top: 46px;
+  }
+}
+
+/* line 66, ../sass/layouts/_layout.scss */
+.layout--contact {
+  height: 100%;
+}
+
+/* line 1, ../sass/objects/_Project.scss */
+.project {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 5, ../sass/objects/_Project.scss */
+.project--blue {
+  background-color: #214760;
+  color: #11F250;
+  border-radius: 5px;
+  margin-top: 48px;
+}
+
+@media all and (min-width: 30em) {
+  /* line 12, ../sass/objects/_Project.scss */
+  .project__left {
+    width: 48.7013%;
+    float: left;
+    margin-right: 2.5974%;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 12, ../sass/objects/_Project.scss */
+  .project__left {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 22, ../sass/objects/_Project.scss */
+.project__left p {
+  text-align: left;
+}
+
+@media all and (min-width: 30em) {
+  /* line 28, ../sass/objects/_Project.scss */
+  .project__right {
+    width: 48.7013%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 28, ../sass/objects/_Project.scss */
+  .project__right {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 38, ../sass/objects/_Project.scss */
+.project__right p {
+  text-align: left;
+}
+
+/* line 44, ../sass/objects/_Project.scss */
+.project__left--centered p {
+  text-align: center;
+}
+
+/* line 50, ../sass/objects/_Project.scss */
+.project__right--centered p {
+  text-align: center;
+}
+
+/* line 56, ../sass/objects/_Project.scss */
+.project--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* line 1, ../sass/objects/_bar.scss */
+.bar {
+  position: relative;
+}
+
+/* line 5, ../sass/objects/_bar.scss */
+.bar__behind {
+  position: relative;
+  background-color: #333333;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* line 15, ../sass/objects/_bar.scss */
+.bar__front {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background-color: #11F250;
+  background-size: cover;
+}
+@media all and (max-width: 47.99em) {
+  /* line 15, ../sass/objects/_bar.scss */
+  .bar__front {
+    right: 49%;
+  }
+}
+
+/* line 1, ../sass/objects/_contactCard.scss */
+.contact-card {
+  margin-left: 14.50216%;
+  width: 65.80087%;
+  float: left;
+  margin-right: 2.5974%;
+  background-color: #11F250;
+  margin-top: 30%;
+  height: 300px;
+}
+
+@media all and (min-width: 30em) {
+  /* line 13, ../sass/objects/_contactCard.scss */
+  .contact-card__left {
+    width: 48.7013%;
+    float: left;
+    margin-right: 2.5974%;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 13, ../sass/objects/_contactCard.scss */
+  .contact-card__left {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 23, ../sass/objects/_contactCard.scss */
+.contact-card__left p {
+  text-align: left;
+}
+
+/* line 28, ../sass/objects/_contactCard.scss */
+.contact-card--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media all and (min-width: 30em) {
+  /* line 34, ../sass/objects/_contactCard.scss */
+  .contact-card__right {
+    width: 48.7013%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 34, ../sass/objects/_contactCard.scss */
+  .contact-card__right {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 45, ../sass/objects/_contactCard.scss */
+.contact-card__right p {
+  text-align: left;
+}
+
+/* line 1, ../sass/objects/_meBox.scss */
+.me-box {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+
+@media all and (min-width: 30em) {
+  /* line 7, ../sass/objects/_meBox.scss */
+  .me-box__left {
+    width: 65.80087%;
+    float: left;
+    margin-right: 2.5974%;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 7, ../sass/objects/_meBox.scss */
+  .me-box__left {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 17, ../sass/objects/_meBox.scss */
+.me-box__left p {
+  text-align: left;
+}
+
+/* line 22, ../sass/objects/_meBox.scss */
+.me-box__left--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media all and (min-width: 30em) {
+  /* line 28, ../sass/objects/_meBox.scss */
+  .me-box__right {
+    width: 14.50216%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 28, ../sass/objects/_meBox.scss */
+  .me-box__right {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 38, ../sass/objects/_meBox.scss */
+.me-box__right p {
+  text-align: center;
+}
+
+/* line 43, ../sass/objects/_meBox.scss */
+.me-box__right--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* line 1, ../sass/objects/_phone.scss */
+.phone-box {
+  position: relative;
+}
+
+/* line 5, ../sass/objects/_phone.scss */
+.phone {
+  position: relative;
+  visibility: hidden;
+  width: 100%;
+}
+
+/* line 13, ../sass/objects/_phone.scss */
+.phone-text {
+  text-align: center;
+  visibility: hidden;
+}
+/* line 15, ../sass/objects/_phone.scss */
+.phone-text p {
+  text-align: center;
+}
+
+/* line 22, ../sass/objects/_phone.scss */
+.phone-box__content {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 5px;
+  top: 14.2%;
+  left: 7.2%;
+  right: 5.8%;
+  bottom: 13.5%;
+  -webkit-transition: background-image 0.5s ease-in-out;
+  -moz-transition: background-image 0.5s ease-in-out;
+  -ms-transition: background-image 0.5s ease-in-out;
+  -o-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+}
+@media all and (max-width: 47.99em) {
+  /* line 22, ../sass/objects/_phone.scss */
+  .phone-box__content {
+    right: 49%;
+  }
+}
+
+/* line 1, ../sass/objects/_svg.scss */
+.loading-svg {
+  margin: auto;
+}
+
+/* line 58, ../sass/main.scss */
+html, body {
+  height: 100%;
+}

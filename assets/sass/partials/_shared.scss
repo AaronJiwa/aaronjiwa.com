@@ -23,3 +23,16 @@
     bottom: 0;
 
 }
+
+.wrap--contact {
+
+    @include container;
+    @include rem((padding: 0 $flexdd-half-spacing-unit ));
+    position: relative;
+
+    @include mq( $from: macro-medium ) {
+        @include rem((
+            padding: 0 32px
+        ));
+    }
+}

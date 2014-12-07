@@ -82,6 +82,18 @@ text-align: center;
     visibility: hidden;
 }
 
+.layout__title--contact {
+    @include adjust-font-size-to(72px);
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.contact__support {
+    @include adjust-font-size-to(48px);
+    line-height: 1.3em;
+    text-align: center;
+}
+
 .layout__title--center {
   text-align: center;
 }
@@ -119,6 +131,10 @@ text-align: center;
 }
 
 .cv-image {
+  visibility: hidden;
+}
+
+.about-me-heading {
   visibility: hidden;
 }
 

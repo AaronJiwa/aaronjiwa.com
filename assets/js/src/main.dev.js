@@ -12,6 +12,9 @@ var aboutTimeLine = About.makeAnim();
 var Skill = Object.create(SkillsObj);
 var barTimeline = Skill.barAnim();
 
+var Contact = Object.create(ContactObj);
+var contactTimeLine = Contact.makeAnim();
+
 controller = new ScrollMagic();
 
 // build scene
@@ -27,17 +30,19 @@ var scenePhone = new ScrollScene({triggerElement: "#project-phone"})
 var sceneText = new ScrollScene({triggerElement: "#project-phone"})
                 .setTween(phoneTextTimeline)
 
-
-
 var sceneSkills = new ScrollScene({triggerElement: "#skills"})
                 .setTween(barTimeline)
+
+var sceneContact = new ScrollScene({triggerElement: "#contact"})
+                .setTween(contactTimeLine)
 
 controller.addScene([
     sceneMe,
     sceneAbout,
     scenePhone,
     sceneText,
-    sceneSkills
+    sceneSkills,
+    sceneContact
 ]);
 
 });

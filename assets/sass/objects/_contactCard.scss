@@ -1,15 +1,16 @@
-.project {
-    @include span(12 last);
+.contact-card {
+    margin-left: span(2);
+    @include span(8);
+    background-color: $green;
+    margin-top: 30%;
+    height:300px;
+
+
 }
 
-.project--blue {
-    background-color:$blue-dark;
-    color:$green;
-    border-radius:5px;
-    margin-top: $flexdd-double-spacing-unit;
-}
 
-.project__left {
+
+.contact-card__left {
 
     @include mq( $from: macro-small ) {
             @include span(6 first);
@@ -24,8 +25,14 @@
     }
 }
 
+.contact-card--padding {
+    padding-top: $flexdd-base-spacing-unit;
+    padding-bottom: $flexdd-base-spacing-unit;
+}
 
-.project__right {
+
+.contact-card__right {
+
 
     @include mq( $from: macro-small ) {
             @include span(6 last);
@@ -38,22 +45,4 @@
     p {
         text-align: left;
     }
-}
-
-.project__left--centered {
-    p{
-    text-align: center;
-    }
-}
-
-.project__right--centered {
-    p{
-    text-align: center;
-    }
-}
-
-
-.project--padding {
-    padding-top: $flexdd-base-spacing-unit;
-    padding-bottom: $flexdd-base-spacing-unit;
 }
