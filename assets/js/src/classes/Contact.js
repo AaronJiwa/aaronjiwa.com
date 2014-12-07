@@ -27,7 +27,8 @@ defineProp( ContactObj, "makeAnim", function(){
             {
                 delay:0.3,
                 rotationY:90,
-                ease:Strong.easeOut
+                ease:Strong.easeOut,
+                autoAlpha:0
             }
         );
 
@@ -35,9 +36,9 @@ defineProp( ContactObj, "makeAnim", function(){
             [$(this.title)],
             this.duration,
             {
-
                 rotationY:0,
-                ease:Strong.easeOut
+                ease:Strong.easeOut,
+                autoAlpha:1
             }
         );
 

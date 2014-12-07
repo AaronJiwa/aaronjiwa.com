@@ -2657,7 +2657,8 @@ defineProp( ContactObj, "makeAnim", function(){
             {
                 delay:0.3,
                 rotationY:90,
-                ease:Strong.easeOut
+                ease:Strong.easeOut,
+                autoAlpha:0
             }
         );
 
@@ -2665,9 +2666,9 @@ defineProp( ContactObj, "makeAnim", function(){
             [$(this.title)],
             this.duration,
             {
-
                 rotationY:0,
-                ease:Strong.easeOut
+                ease:Strong.easeOut,
+                autoAlpha:1
             }
         );
 
@@ -2863,10 +2864,12 @@ defineProp( PhoneObj, "phoneImageAnim", function(){
 
 });
 var SkillsObj = {
-    bar: '.bar__front',
+    skillJava: '.skill-java',
+    skillSdk: '.skill-sdk',
+    barWidth: $('.bar__behind').outerWidth()/100,
     timeLineMax: new TimelineMax(),
     delay: 0.5,
-    duration: 1,
+    duration: 0.5,
     distance: 400
 };
 
@@ -2889,10 +2892,20 @@ defineProp( SkillsObj, "barAnim", function(){
 
 
         this.timeLineMax.to(
-            [$(this.bar)],
+            [$(this.skillJava)],
             this.duration,
             {
-                right:0,
+                delay:0.5,
+                right:this.barWidth*20,
+                ease:Strong.easeOut
+            }
+        );
+
+        this.timeLineMax.to(
+            [$(this.skillSdk)],
+            this.duration,
+            {
+                right:this.barWidth*30,
                 ease:Strong.easeOut
             }
         );
@@ -2924,7 +2937,7 @@ controller = new ScrollMagic();
 var sceneMe = new ScrollScene({triggerElement: ".layout--me"})
                 .setTween(meTimeline)
 
-var sceneAbout = new ScrollScene({triggerElement: ".layout--about"})
+var sceneAbout = new ScrollScene({triggerElement: ".layout--about",triggerHook: 0.4})
                 .setTween(aboutTimeLine)
 
 var scenePhone = new ScrollScene({triggerElement: "#project-phone"})

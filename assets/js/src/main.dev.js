@@ -21,7 +21,7 @@ controller = new ScrollMagic();
 var sceneMe = new ScrollScene({triggerElement: ".layout--me"})
                 .setTween(meTimeline)
 
-var sceneAbout = new ScrollScene({triggerElement: ".layout--about"})
+var sceneAbout = new ScrollScene({triggerElement: ".layout--about",triggerHook: 0.4})
                 .setTween(aboutTimeLine)
 
 var scenePhone = new ScrollScene({triggerElement: "#project-phone"})

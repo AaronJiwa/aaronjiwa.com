@@ -86,6 +86,7 @@ text-align: center;
     @include adjust-font-size-to(72px);
     line-height: 1.3em;
     text-align: center;
+    visibility: hidden;
 }
 
 .contact__support {
@@ -136,6 +137,12 @@ text-align: center;
 
 .about-me-heading {
   visibility: hidden;
+}
+.skills-content {
+  p {
+      @include adjust-font-size-to(22px);
+  }
+
 }
 
 li a{

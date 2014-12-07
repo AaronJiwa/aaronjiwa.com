@@ -1616,9 +1616,10 @@ a {
   line-height: 1.33333em;
   line-height: 1.3em;
   text-align: center;
+  visibility: hidden;
 }
 
-/* line 91, ../sass/type/_type.scss */
+/* line 92, ../sass/type/_type.scss */
 .contact__support {
   font-size: 3em;
   line-height: 1.5em;
@@ -1626,19 +1627,19 @@ a {
   text-align: center;
 }
 
-/* line 97, ../sass/type/_type.scss */
+/* line 98, ../sass/type/_type.scss */
 .layout__title--center {
   text-align: center;
 }
 
-/* line 101, ../sass/type/_type.scss */
+/* line 102, ../sass/type/_type.scss */
 .layout__title-support--me {
   font-size: 2em;
   line-height: 1.5em;
   visibility: hidden;
 }
 
-/* line 106, ../sass/type/_type.scss */
+/* line 107, ../sass/type/_type.scss */
 .extra {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -1646,44 +1647,50 @@ a {
   text-align: center;
 }
 
-/* line 112, ../sass/type/_type.scss */
+/* line 113, ../sass/type/_type.scss */
 .green-text {
   color: #11F250;
 }
 
-/* line 116, ../sass/type/_type.scss */
+/* line 117, ../sass/type/_type.scss */
 .small {
   font-size: 0.875em;
   line-height: 1.71429em;
   text-align: center;
 }
 
-/* line 121, ../sass/type/_type.scss */
+/* line 122, ../sass/type/_type.scss */
 .about-text-left {
   visibility: hidden;
 }
 
-/* line 125, ../sass/type/_type.scss */
+/* line 126, ../sass/type/_type.scss */
 .about-text-left {
   visibility: hidden;
 }
 
-/* line 129, ../sass/type/_type.scss */
+/* line 130, ../sass/type/_type.scss */
 .cv-text {
   visibility: hidden;
 }
 
-/* line 133, ../sass/type/_type.scss */
+/* line 134, ../sass/type/_type.scss */
 .cv-image {
   visibility: hidden;
 }
 
-/* line 137, ../sass/type/_type.scss */
+/* line 138, ../sass/type/_type.scss */
 .about-me-heading {
   visibility: hidden;
 }
 
-/* line 141, ../sass/type/_type.scss */
+/* line 142, ../sass/type/_type.scss */
+.skills-content p {
+  font-size: 1.375em;
+  line-height: 2.18182em;
+}
+
+/* line 148, ../sass/type/_type.scss */
 li a {
   font-family: light;
   font-weight: 300;
@@ -1693,11 +1700,11 @@ li a {
   font-size: 1.25em;
   line-height: 1.2em;
 }
-/* line 149, ../sass/type/_type.scss */
+/* line 156, ../sass/type/_type.scss */
 li a:first-child {
   margin-left: 48px;
 }
-/* line 153, ../sass/type/_type.scss */
+/* line 160, ../sass/type/_type.scss */
 li a:last-child {
   margin-right: 48px;
 }
@@ -1971,9 +1978,11 @@ li a:last-child {
   background-color: #333333;
   width: 100%;
   border-radius: 5px;
+  font-size: 1.1875em;
+  line-height: 1.26316em;
 }
 
-/* line 15, ../sass/objects/_bar.scss */
+/* line 16, ../sass/objects/_bar.scss */
 .bar__front {
   position: absolute;
   border-radius: 5px;
@@ -1985,7 +1994,7 @@ li a:last-child {
   background-size: cover;
 }
 @media all and (max-width: 47.99em) {
-  /* line 15, ../sass/objects/_bar.scss */
+  /* line 16, ../sass/objects/_bar.scss */
   .bar__front {
     right: 49%;
   }
