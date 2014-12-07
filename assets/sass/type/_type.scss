@@ -5,12 +5,37 @@
  * Custom type styles and sizes belong in here.
  */
 
+//*-------------------------------------*
+//  $TYPE
+//*-------------------------------------*
 
+  //Base type
+  $base-font-size: 16px;
+  $base-line-height: 24px !default;
+  $base-face: sans-serif  !default;
+
+  //Base font sizes
+  $flexdd-h1-size: 36px !default;
+  $flexdd-h2-size: 28px !default;
+  $flexdd-h3-size: 20px !default;
+  $flexdd-h4-size: 18px !default;
+  $flexdd-h5-size: $base-font-size !default;
+  $flexdd-h6-size: $base-font-size !default;
 
 
 p {
-  @include adjust-font-size-to($base-font-size);
-  text-align: center;
+  @include opensans(light,300);
+  @include adjust-font-size-to(28px);
+  text-align: left;
+}
+
+h1 {
+font-family: "Arial";
+}
+
+h2 {
+  @include opensans(light,300);
+  @include adjust-font-size-to(72px);
 }
 
 .i-hi {
@@ -30,6 +55,18 @@ p {
   margin-top: $flexdd-base-spacing-unit;
 }
 
+.me-box__left {
+  p {
+    @include adjust-font-size-to(22px);
+    line-height: 1.6em;
+  }
+
+}
+
+a{
+  color:$white;
+
+}
 
 .layout__content--cover {
 text-align: center;
@@ -45,6 +82,10 @@ text-align: center;
     visibility: hidden;
 }
 
+.layout__title--center {
+  text-align: center;
+}
+
 .layout__title-support--me {
     @include adjust-font-size-to(32px);
     visibility: hidden;
@@ -53,13 +94,24 @@ text-align: center;
 .extra {
     @include adjust-font-size-to(14px);
     visibility: hidden;
+    text-align: center;
 }
 
+.green-text {
+  color: $green;
+}
+
+.small {
+    @include adjust-font-size-to(14px);
+    text-align: center;
+}
 li a{
+    @include opensans(light,300);
     color:$blue-dark;
     margin-right: $flexdd-base-spacing-unit;
     margin-left: $flexdd-base-spacing-unit;
     @include adjust-font-size-to($nav-font-size);
+
 
     &:first-child{
       margin-left: $flexdd-double-spacing-unit;

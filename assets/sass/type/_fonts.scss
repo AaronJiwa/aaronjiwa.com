@@ -4,3 +4,18 @@
  * Used to define any font faces
  * or font based mixins.
  */
+
+@font-face {
+    font-family: light;
+    src: url('fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: reg;
+    src: url('fonts/OpenSans-Regular.ttf');
+}
+
+@mixin opensans($type,$weight) {
+    font-family: $type;
+    font-weight: $weight;
+}

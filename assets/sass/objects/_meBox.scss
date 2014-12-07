@@ -1,26 +1,46 @@
 .me-box {
-    visibility: hidden;
-    @include span(12 of 12);
-    background-color:#306E96;
-    padding:$flexdd-base-spacing-unit;
+    @include span(12 last);
 }
+
+
 
 .me-box__left {
-    @include span(2 first);
-    text-align: center;
 
-}
+    @include mq( $from: macro-small ) {
+            @include span(8 first);
+    }
 
-.me-box__middle {
-    @include span(8);
+    @include mq( $to: macro-medium ) {
+        @include gutters($flexdd-base-spacing-unit inside);
+    }
+
     p{
-        text-align: left;
+    text-align: left;
     }
 }
 
+.me-box__left--padding {
+    padding-top: $flexdd-base-spacing-unit;
+    padding-bottom: $flexdd-base-spacing-unit;
+}
+
+
 .me-box__right {
-    @include span(2 last);
+
+    @include mq( $from: macro-small ) {
+            @include span(2 last);
+    }
+
+    @include mq( $to: macro-medium ) {
+        @include gutters($flexdd-base-spacing-unit inside);
+    }
+
     p {
         text-align: center;
     }
+}
+
+.me-box__right--padding {
+    padding-top: $flexdd-base-spacing-unit;
+    padding-bottom: $flexdd-base-spacing-unit;
 }

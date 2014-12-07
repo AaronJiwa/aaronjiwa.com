@@ -1,0 +1,17 @@
+  <div id="me" class="layout layout--with-padding layout--about layout--white ">
+    <div class="wrap">
+    <div class="con">
+          <div class="me-box">
+            <div class="me-box__left">
+              <i class="i-hi"></i>
+            </div>
+            <div class="me-box__middle">
+              <p>As you've probably already guessed my name's Aaron, I enjoy creating feature rich APIs, Powerful Apps and great looking websites take a look at my recent projects and skills below, also check out my CV -></p>
+            </div>
+            <div class="me-box__right">
+              <p>CV</p>
+            </div>
+      </div>
+      </div>
+    </div>
+  </div>

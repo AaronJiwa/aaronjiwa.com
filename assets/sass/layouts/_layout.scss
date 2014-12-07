@@ -2,14 +2,16 @@
     @extend %cf;
     position: relative;
     -webkit-backface-visibility: hidden;
-        -webkit-transition: translate3d(0,0,0);
+    -webkit-transition: translate3d(0,0,0);
 }
+
 
 .layout--me {
     background-color:$blue-dark;
-    color:$green;
+
+    color:$white;
     height: 100%;
-    margin-bottom:-70px;
+    margin-bottom:-46px;
     z-index: -1;
 
     @include mq( $to: macro-medium ) {
@@ -18,8 +20,12 @@
 }
 
 .layout--with-padding {
-    padding-top: $flexdd-double-spacing-unit;
-    padding-bottom: $flexdd-double-spacing-unit;
+    padding-top: $flexdd-double-spacing-unit*2;
+    padding-bottom: $flexdd-double-spacing-unit*2;
+}
+
+.layout--with-padding-top {
+    padding-top: $flexdd-double-spacing-unit*2;
 }
 
 .layout--green {
@@ -29,12 +35,30 @@
 
 .layout--blue {
     background-color:$blue-dark;
-    color:$green;
+    color:$white;
+}
+
+.layout--white {
+    background-color:$white;
+    color:$blue-dark;
+    @include mq( $from: macro-small ) {
+        height:90%;
+    }
+
+}
+
+.layout--white-dark {
+    background-color:$white-dark;
+    color:$blue-dark;
 }
 
 .layout--about{
     @include mq( $from: macro-small ) {
-        margin-top: 70px;
+        margin-top: 46px;
     }
+}
+
+.layout--contact {
+    height:100%;
 }
 

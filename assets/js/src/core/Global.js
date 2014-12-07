@@ -30,9 +30,8 @@ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && lo
   var target = $(this.hash);
   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
   if (target.length) {
-    $('html,body').animate({
-      scrollTop: target.offset().top-70
-    }, 1000);
+    TweenLite.to($('html,body'), 1, {scrollTop:target.offset().top,ease:Strong.easeOut});
+
     return false;
   }
 }

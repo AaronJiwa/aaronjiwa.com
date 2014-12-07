@@ -28,22 +28,7 @@
 
   $mq-static-breakpoint: macro-large !default;
 
-//*-------------------------------------*
-//  $TYPE
-//*-------------------------------------*
 
-  //Base type
-  $base-font-size: 18px   !default;
-  $base-line-height: 24px !default;
-  $base-face: sans-serif  !default;
-
-  //Base font sizes
-  $flexdd-h1-size: 36px !default;
-  $flexdd-h2-size: 28px !default;
-  $flexdd-h3-size: 20px !default;
-  $flexdd-h4-size: 18px !default;
-  $flexdd-h5-size: $base-font-size !default;
-  $flexdd-h6-size: $base-font-size !default;
 
 //*-------------------------------------*
 //  $SPACING
@@ -59,7 +44,7 @@
 \*------------------------------------*/
 
 $total-columns: 12;                  // a 12-column grid
-$column-width: 50px;                 // each column is 4em wide
+$column-width: 55px;                 // each column is 4em wide
 $gutter-width: $flexdd-base-spacing-unit;   // 1em gutters between columns
 $grid-padding: $flexdd-double-spacing-unit; // wider grid padding to give the brand some space
 

@@ -1495,6 +1495,14 @@ table-hover tbody tr.info:hover td {
  * or font based mixins.
  */
 @font-face {
+  font-family: light;
+  src: url("fonts/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: reg;
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+@font-face {
   font-family: "icons";
   src: url("fonts/icons.eot");
   src: url("fonts/icons.eot?#iefix") format("embedded-opentype"), url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype"), url("fonts/icons.svg#icomoon") format("svg");
@@ -1507,14 +1515,29 @@ table-hover tbody tr.info:hover td {
  * Used to setup the type configuration
  * Custom type styles and sizes belong in here.
  */
-/* line 11, ../sass/type/_type.scss */
+/* line 26, ../sass/type/_type.scss */
 p {
-  font-size: 1em;
-  line-height: 1.5em;
-  text-align: center;
+  font-family: light;
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 1.71429em;
+  text-align: left;
 }
 
-/* line 16, ../sass/type/_type.scss */
+/* line 32, ../sass/type/_type.scss */
+h1 {
+  font-family: "Arial";
+}
+
+/* line 36, ../sass/type/_type.scss */
+h2 {
+  font-family: light;
+  font-weight: 300;
+  font-size: 4.5em;
+  line-height: 1.33333em;
+}
+
+/* line 41, ../sass/type/_type.scss */
 .i-hi {
   font-family: "icons";
   speak: none;
@@ -1532,7 +1555,7 @@ p {
   content: "";
 }
 
-/* line 22, ../sass/type/_type.scss */
+/* line 47, ../sass/type/_type.scss */
 .i-anchor {
   visibility: hidden;
   font-family: "icons";
@@ -1552,22 +1575,34 @@ p {
 .i-anchor:before {
   content: "";
 }
-/* line 27, ../sass/type/_type.scss */
+/* line 52, ../sass/type/_type.scss */
 .i-anchor:hover {
   color: red;
 }
 
-/* line 34, ../sass/type/_type.scss */
+/* line 59, ../sass/type/_type.scss */
+.me-box__left p {
+  font-size: 1.375em;
+  line-height: 2.18182em;
+  line-height: 1.6em;
+}
+
+/* line 66, ../sass/type/_type.scss */
+a {
+  color: #e4e9ea;
+}
+
+/* line 71, ../sass/type/_type.scss */
 .layout__content--cover {
   text-align: center;
 }
 
-/* line 38, ../sass/type/_type.scss */
+/* line 75, ../sass/type/_type.scss */
 .layout__content--me {
   text-align: center;
 }
 
-/* line 42, ../sass/type/_type.scss */
+/* line 79, ../sass/type/_type.scss */
 .layout__title--me {
   font-size: 9em;
   line-height: 1.16667em;
@@ -1575,40 +1610,60 @@ p {
   visibility: hidden;
 }
 
-/* line 48, ../sass/type/_type.scss */
+/* line 85, ../sass/type/_type.scss */
+.layout__title--center {
+  text-align: center;
+}
+
+/* line 89, ../sass/type/_type.scss */
 .layout__title-support--me {
   font-size: 2em;
   line-height: 1.5em;
   visibility: hidden;
 }
 
-/* line 53, ../sass/type/_type.scss */
+/* line 94, ../sass/type/_type.scss */
 .extra {
   font-size: 0.875em;
   line-height: 1.71429em;
   visibility: hidden;
+  text-align: center;
 }
 
-/* line 58, ../sass/type/_type.scss */
+/* line 100, ../sass/type/_type.scss */
+.green-text {
+  color: #11F250;
+}
+
+/* line 104, ../sass/type/_type.scss */
+.small {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  text-align: center;
+}
+
+/* line 108, ../sass/type/_type.scss */
 li a {
+  font-family: light;
+  font-weight: 300;
   color: #214760;
   margin-right: 24px;
   margin-left: 24px;
-  font-size: 1.5em;
-  line-height: 2em;
+  font-size: 1.25em;
+  line-height: 1.2em;
 }
-/* line 64, ../sass/type/_type.scss */
+/* line 116, ../sass/type/_type.scss */
 li a:first-child {
   margin-left: 48px;
 }
-/* line 68, ../sass/type/_type.scss */
+/* line 120, ../sass/type/_type.scss */
 li a:last-child {
   margin-right: 48px;
 }
 
 /* line 1, ../sass/partials/_shared.scss */
 .wrap {
-  max-width: 864px;
+  max-width: 924px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 12px;
@@ -1646,15 +1701,20 @@ li a:last-child {
   visibility: hidden;
   width: 100%;
   z-index: 1;
-  margin-bottom: -70px;
-  background-color: #9EDF48;
-  height: 70px;
+  margin-bottom: -46px;
+  background-color: #142b3a;
+  height: 46px;
   text-align: center;
+  -webkit-transition: background-color 1s;
 }
 /* line 3, ../sass/partials/_siteHeader.scss */
 .site-header li {
   display: inline-block;
   clear: both;
+}
+/* line 7, ../sass/partials/_siteHeader.scss */
+.site-header li a {
+  color: #e4e9ea;
 }
 @media all and (max-width: 47.99em) {
   /* line 1, ../sass/partials/_siteHeader.scss */
@@ -1663,22 +1723,22 @@ li a:last-child {
   }
 }
 
-/* line 18, ../sass/partials/_siteHeader.scss */
+/* line 25, ../sass/partials/_siteHeader.scss */
 .nav-links {
   padding-top: 12px;
 }
 
-/* line 23, ../sass/partials/_siteHeader.scss */
+/* line 30, ../sass/partials/_siteHeader.scss */
 .site-header--sticky {
-  height: 70px;
-  background-color: #9EDF48;
+  height: 46px;
+  background-color: rgba(228, 233, 234, 0.95);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(171, 186, 189, 0.95);
 }
-/* line 32, ../sass/partials/_siteHeader.scss */
+/* line 39, ../sass/partials/_siteHeader.scss */
 .site-header--sticky li a {
   color: #214760;
 }
@@ -1690,116 +1750,265 @@ li a:last-child {
   -webkit-transition: translate3d(0, 0, 0);
 }
 
-/* line 8, ../sass/layouts/_layout.scss */
+/* line 9, ../sass/layouts/_layout.scss */
 .layout--me {
   background-color: #214760;
-  color: #9EDF48;
+  color: #e4e9ea;
   height: 100%;
-  margin-bottom: -70px;
+  margin-bottom: -46px;
   z-index: -1;
 }
 @media all and (max-width: 47.99em) {
-  /* line 8, ../sass/layouts/_layout.scss */
+  /* line 9, ../sass/layouts/_layout.scss */
   .layout--me {
     display: none;
   }
 }
 
-/* line 20, ../sass/layouts/_layout.scss */
+/* line 22, ../sass/layouts/_layout.scss */
 .layout--with-padding {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-/* line 25, ../sass/layouts/_layout.scss */
+/* line 27, ../sass/layouts/_layout.scss */
+.layout--with-padding-top {
+  padding-top: 96px;
+}
+
+/* line 31, ../sass/layouts/_layout.scss */
 .layout--green {
-  background-color: #9EDF48;
+  background-color: #11F250;
   color: #214760;
 }
 
-/* line 30, ../sass/layouts/_layout.scss */
+/* line 36, ../sass/layouts/_layout.scss */
 .layout--blue {
   background-color: #214760;
-  color: #9EDF48;
+  color: #e4e9ea;
+}
+
+/* line 41, ../sass/layouts/_layout.scss */
+.layout--white {
+  background-color: #e4e9ea;
+  color: #214760;
+}
+@media all and (min-width: 30em) {
+  /* line 41, ../sass/layouts/_layout.scss */
+  .layout--white {
+    height: 90%;
+  }
+}
+
+/* line 50, ../sass/layouts/_layout.scss */
+.layout--white-dark {
+  background-color: #f5f5f5;
+  color: #214760;
 }
 
 @media all and (min-width: 30em) {
-  /* line 35, ../sass/layouts/_layout.scss */
+  /* line 55, ../sass/layouts/_layout.scss */
   .layout--about {
-    margin-top: 70px;
+    margin-top: 46px;
   }
+}
+
+/* line 61, ../sass/layouts/_layout.scss */
+.layout--contact {
+  height: 100%;
 }
 
 /* line 1, ../sass/objects/_Project.scss */
 .project {
   width: 100%;
-  float: left;
-  margin-left: 0;
+  float: right;
   margin-right: 0;
-  padding: 24px;
 }
 
-/* line 6, ../sass/objects/_Project.scss */
-.project__left {
-  width: 48.61111%;
-  float: left;
-  margin-right: 2.77778%;
+@media all and (min-width: 30em) {
+  /* line 7, ../sass/objects/_Project.scss */
+  .project__left {
+    width: 48.7013%;
+    float: left;
+    margin-right: 2.5974%;
+  }
 }
-/* line 8, ../sass/objects/_Project.scss */
+@media all and (max-width: 47.99em) {
+  /* line 7, ../sass/objects/_Project.scss */
+  .project__left {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 17, ../sass/objects/_Project.scss */
 .project__left p {
   text-align: left;
 }
 
-/* line 14, ../sass/objects/_Project.scss */
-.project__right {
-  width: 48.61111%;
-  float: right;
-  margin-right: 0;
+/* line 22, ../sass/objects/_Project.scss */
+.project__left--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-/* line 16, ../sass/objects/_Project.scss */
+
+@media all and (min-width: 30em) {
+  /* line 28, ../sass/objects/_Project.scss */
+  .project__right {
+    width: 48.7013%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 28, ../sass/objects/_Project.scss */
+  .project__right {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 39, ../sass/objects/_Project.scss */
 .project__right p {
   text-align: left;
 }
 
+/* line 44, ../sass/objects/_Project.scss */
+.project__right--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* line 1, ../sass/objects/_bar.scss */
+.bar {
+  position: relative;
+}
+
+/* line 5, ../sass/objects/_bar.scss */
+.bar__behind {
+  position: relative;
+  background-color: #333333;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* line 15, ../sass/objects/_bar.scss */
+.bar__front {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background-color: #11F250;
+  background-size: cover;
+}
+@media all and (max-width: 47.99em) {
+  /* line 15, ../sass/objects/_bar.scss */
+  .bar__front {
+    right: 49%;
+  }
+}
+
 /* line 1, ../sass/objects/_meBox.scss */
 .me-box {
-  visibility: hidden;
   width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background-color: #306E96;
-  padding: 24px;
-}
-
-/* line 8, ../sass/objects/_meBox.scss */
-.me-box__left {
-  width: 14.35185%;
-  float: left;
-  margin-right: 2.77778%;
-  text-align: center;
-}
-
-/* line 14, ../sass/objects/_meBox.scss */
-.me-box__middle {
-  width: 65.74074%;
-  float: left;
-  margin-right: 2.77778%;
-}
-/* line 16, ../sass/objects/_meBox.scss */
-.me-box__middle p {
-  text-align: left;
-}
-
-/* line 21, ../sass/objects/_meBox.scss */
-.me-box__right {
-  width: 14.35185%;
   float: right;
   margin-right: 0;
 }
-/* line 23, ../sass/objects/_meBox.scss */
+
+@media all and (min-width: 30em) {
+  /* line 7, ../sass/objects/_meBox.scss */
+  .me-box__left {
+    width: 65.80087%;
+    float: left;
+    margin-right: 2.5974%;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 7, ../sass/objects/_meBox.scss */
+  .me-box__left {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 17, ../sass/objects/_meBox.scss */
+.me-box__left p {
+  text-align: left;
+}
+
+/* line 22, ../sass/objects/_meBox.scss */
+.me-box__left--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+@media all and (min-width: 30em) {
+  /* line 28, ../sass/objects/_meBox.scss */
+  .me-box__right {
+    width: 14.50216%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 47.99em) {
+  /* line 28, ../sass/objects/_meBox.scss */
+  .me-box__right {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* line 38, ../sass/objects/_meBox.scss */
 .me-box__right p {
   text-align: center;
+}
+
+/* line 43, ../sass/objects/_meBox.scss */
+.me-box__right--padding {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* line 1, ../sass/objects/_phone.scss */
+.phone-box {
+  position: relative;
+}
+
+/* line 5, ../sass/objects/_phone.scss */
+.phone {
+  position: relative;
+  visibility: hidden;
+  width: 100%;
+}
+
+/* line 13, ../sass/objects/_phone.scss */
+.phone-text {
+  text-align: center;
+  visibility: hidden;
+}
+/* line 15, ../sass/objects/_phone.scss */
+.phone-text p {
+  text-align: center;
+}
+
+/* line 21, ../sass/objects/_phone.scss */
+.phone-box__content {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 5px;
+  top: 14.2%;
+  left: 7.2%;
+  right: 5.8%;
+  bottom: 13.5%;
+  -webkit-transition: background-image 0.5s ease-in-out;
+  -moz-transition: background-image 0.5s ease-in-out;
+  -ms-transition: background-image 0.5s ease-in-out;
+  -o-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+}
+@media all and (max-width: 47.99em) {
+  /* line 21, ../sass/objects/_phone.scss */
+  .phone-box__content {
+    right: 49%;
+  }
 }
 
 /* line 1, ../sass/objects/_svg.scss */
@@ -1807,7 +2016,7 @@ li a:last-child {
   margin: auto;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 html, body {
   height: 100%;
 }

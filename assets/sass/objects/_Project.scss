@@ -1,19 +1,47 @@
 .project {
-    @include span(12 of 12);
-    padding:$flexdd-base-spacing-unit;
+    @include span(12 last);
 }
 
+
+
 .project__left {
-    @include span(6 first);
+
+    @include mq( $from: macro-small ) {
+            @include span(6 first);
+    }
+
+    @include mq( $to: macro-medium ) {
+        @include gutters($flexdd-base-spacing-unit inside);
+    }
+
     p{
     text-align: left;
     }
 }
 
+.project__left--padding {
+    padding-top: $flexdd-base-spacing-unit;
+    padding-bottom: $flexdd-base-spacing-unit;
+}
+
 
 .project__right {
-    @include span(6 last);
+
+
+    @include mq( $from: macro-small ) {
+            @include span(6 last);
+    }
+
+    @include mq( $to: macro-medium ) {
+        @include gutters($flexdd-base-spacing-unit inside);
+    }
+
     p {
         text-align: left;
     }
+}
+
+.project__right--padding {
+    padding-top: $flexdd-base-spacing-unit;
+    padding-bottom: $flexdd-base-spacing-unit;
 }

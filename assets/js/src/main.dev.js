@@ -1,9 +1,14 @@
 var Me = Object.create(MeObj);
 var meTimeline = Me.makeAnim();
 
-var About = Object.create(AboutObj);
-var aboutTimeline = About.makeAnim();
+var Phone = Object.create(PhoneObj);
+Phone.beforeAnim();
+var phoneTimeline = Phone.phoneAnim();
+var phoneTextTimeline = Phone.phoneTextAnim();
+//var phoneImageTimeline = Phone.phoneImageAnim();
 
+var Skill = Object.create(SkillsObj);
+var barTimeline = Skill.barAnim();
 
 controller = new ScrollMagic();
 
@@ -11,15 +16,22 @@ controller = new ScrollMagic();
 var sceneMe = new ScrollScene({triggerElement: ".layout--me"})
                 .setTween(meTimeline)
 
+var scenePhone = new ScrollScene({triggerElement: "#project-phone"})
+                .setTween(phoneTimeline)
 
-var sceneAbout = new ScrollScene({triggerElement: ".layout--about"})
-                .setTween(aboutTimeline)
+var sceneText = new ScrollScene({triggerElement: "#project-phone"})
+                .setTween(phoneTextTimeline)
 
 
+
+var sceneSkills = new ScrollScene({triggerElement: "#skills"})
+                .setTween(barTimeline)
 
 controller.addScene([
     sceneMe,
-    sceneAbout
+    scenePhone,
+    sceneText,
+    sceneSkills
 ]);
 
 });

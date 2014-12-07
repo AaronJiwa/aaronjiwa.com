@@ -63,7 +63,6 @@ module.exports = function( grunt ) {
                 'bower_components/gsap/src/minified/TimelineMax.min.js',
                 'bower_components/gsap/src/minified/TweenMax.min.js',
                 'bower_components/jquery/dist/jquery.min.js',
-                'bower_components/jquery.transit/jquery.transit.js',
                 'bower_components/gsap/src/minified/jquery.gasp.min.js',
                 'bower_components/ScrollMagic/js/jquery.scrollmagic.js',
                 'assets/js/src/plugins.js',
@@ -120,6 +119,7 @@ module.exports = function( grunt ) {
       },
       js: {
         files: [
+          'assets/js/src/core/*.js',
           'assets/js/src/plugins/*.js',
           'assets/js/src/classes/*.js',
           'assets/js/src/main.dev.js'

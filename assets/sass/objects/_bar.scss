@@ -1,0 +1,29 @@
+.bar {
+  position: relative;
+}
+
+.bar__behind {
+  position: relative;
+  background-color:#333333;
+  width: 100%;
+  border-radius: 5px;
+
+
+}
+
+
+.bar__front {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background-color:$green;
+  background-size: cover;
+  @include mq($to:macro-medium){
+    right: 49%;
+  }
+
+
+}

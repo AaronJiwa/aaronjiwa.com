@@ -3,31 +3,38 @@
     li {
     display: inline-block;
     clear: both;
+
+    a {
+        color:$white;
     }
+    }
+
     width:100%;
     z-index:1;
-    margin-bottom: -70px;
-    background-color:$green;
-    height:70px;
+    margin-bottom: -46px;
+    background-color:darken($blue-dark,10%);
+    height:46px;
     text-align: center;
+
     @include mq( $to: macro-medium ) {
         display:none;
     }
+    -webkit-transition: background-color 1s;
 }
 
 .nav-links {
-    padding-top:$nav-font-size/2;
+    padding-top:12px;
 
 }
 
 .site-header--sticky {
-    height: 70px;
-    background-color:$green;
+    height: 46px;
+    background-color:rgba($white,0.95);
 
     position: fixed;
     top: 0; left: 0;
     z-index: 2;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid darken(rgba($white,0.95),20%);
 
     li a {
         color:$blue-dark;

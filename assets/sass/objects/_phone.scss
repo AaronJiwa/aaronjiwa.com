@@ -1,0 +1,39 @@
+.phone-box {
+  position: relative;
+}
+
+.phone {
+  position: relative;
+
+  visibility: hidden;
+  width: 100%;
+
+}
+
+.phone-text {
+  text-align: center;
+  p {
+    text-align: center;
+  }
+  visibility: hidden;
+}
+
+.phone-box__content {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 5px;
+  top: 14.2%;
+  left: 7.2%;
+  right: 5.8%;
+  bottom: 13.5%;
+  @include mq($to:macro-medium){
+    right: 49%;
+  }
+
+  -webkit-transition: background-image 0.5s ease-in-out;
+  -moz-transition: background-image 0.5s ease-in-out;
+  -ms-transition: background-image 0.5s ease-in-out;
+  -o-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+
+}
